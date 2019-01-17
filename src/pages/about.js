@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../components/container';
 import styles from './about.module.css';
 import Layout from '../components/layout';
+import { Link } from 'gatsby';
 
 console.log(styles);
 
@@ -47,6 +48,17 @@ export default () => (
         too much about the details - you just know you don't want to have to do
         it yourself. Let us help!
       </p>
+      <Link
+        to="/"
+        activeStyle={{
+          color: 'red',
+        }}
+        state={{
+          pleasant: 'reasonably',
+        }}
+      >
+        Home page
+      </Link>
     </Layout>
   </Container>
 );
