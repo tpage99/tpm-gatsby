@@ -3,33 +3,40 @@ import Container from '../components/container';
 import styles from './about.module.css';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
+import '../assets/main.css';
 
 console.log(styles);
-
-const User = props => (
-  <div className={styles.user}>
-    <img src={props.avatar} className={styles.avatar} alt="" />
-    <div className={styles.description}>
-      <h2 className={styles.username}>{props.username}</h2>
-      <p className={styles.excerpt}>{props.excerpt}</p>
-    </div>
-  </div>
-);
 
 export default () => (
   <Container>
     <Layout>
       <h1 style={{ textAlign: `center` }}>a little about us.</h1>
-      <User
-        username="Kendra Page"
-        avatar="https://res.cloudinary.com/tpage99/image/upload/v1546835047/web%20assets/kendra_website_final.jpg"
-        excerpt="Kendra is the social media ninja who uses her skills to build brand authentic language that helps companies speak to their customers like a real person. What does that even mean? She is great at talking to your customers in a way that genuinely represents your business and makes them feel like they can talk back to you."
-      />
-      <User
-        username="Taylor Page"
-        avatar="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
-        excerpt="Taylor is the techie who loves learning about web development and using technologies to solve real life problems. With a Masters degree in counseling psychology and a lot of experience in social work as a caseworker, Taylor uses technology regularly as a remedy and resource for all sorts of issues."
-      />
+      <div className="grid">
+        <img
+          src="https://res.cloudinary.com/tpage99/image/upload/v1546835047/web%20assets/kendra_website_final.jpg"
+          alt="kendra portfolio"
+        />
+        <p className="text-block">
+          Kendra is the social media ninja who uses her skills to build brand
+          authentic language that helps companies speak to their customers like
+          a real person. What does that even mean? She is great at talking to
+          your customers in a way that genuinely represents your business and
+          makes them feel like they can talk back to you.
+        </p>
+      </div>
+      <div className="grid">
+        <p className="text-block">
+          Taylor is the techie who loves learning about web development and
+          using technologies to solve real life problems. With a Masters degree
+          in counseling psychology and a lot of experience in social work as a
+          caseworker, Taylor uses technology regularly as a remedy and resource
+          for all sorts of issues.
+        </p>
+        <img
+          src="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
+          alt="taylor profile"
+        />
+      </div>
       <h2>Why You Should Work With Us</h2>
       <h5>We're not your typical "tech" people.</h5>
       <p>

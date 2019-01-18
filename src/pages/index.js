@@ -17,9 +17,6 @@ export default class index extends Component {
             activeStyle={{
               color: 'red',
             }}
-            ref={el => {
-              this.myLink = el;
-            }}
             state={{
               pleasant: 'reasonably',
             }}
