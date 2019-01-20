@@ -3,7 +3,12 @@
   --main-font-color: whitesmoke;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   background-color: var(--main-bg-color);
   color: var(--main-font-color);
 }
