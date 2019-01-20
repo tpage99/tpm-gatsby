@@ -30,7 +30,14 @@ export default class index extends Component {
           </div>
         </Container>
         <div>
-          <h2 style={{ textAlign: `center`, background: `rebeccapurple` }}>
+          <h2
+            style={{
+              textAlign: `center`,
+              background: `rebeccapurple`,
+              color: `whitesmoke`,
+              padding: `20px`,
+            }}
+          >
             check out some of the stuff we do.
           </h2>
         </div>
@@ -96,8 +103,8 @@ export default class index extends Component {
               </Link>
             </div>
           </div>
+          <Link to="/about/">About page</Link>
         </Container>
-        <Link to="/about/">About page</Link>
       </div>
     );
   }
