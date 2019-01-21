@@ -6,13 +6,13 @@ import './Navbar.css';
 const navbar = props => (
   <header className="navbar">
     <nav className="navbar_navigation">
-      <div className="navbar_toggle-button">
-        <DrawerToggleButton click={props.drawerClickHandler} />
-      </div>
       <div className="navbar_logo">
         <a href="/">The Logo</a>
       </div>
       <div className="spacer" />
+      <div className="navbar_toggle-button">
+        <DrawerToggleButton click={props.drawerClickHandler} />
+      </div>
       <div className="navbar_navigation-items">
         <ul>
           <li>
