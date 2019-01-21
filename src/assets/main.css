@@ -59,7 +59,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 799px) {
   .grid {
     display: grid;
     grid-gap: 20px;

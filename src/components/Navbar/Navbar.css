@@ -50,13 +50,13 @@
   color: orange;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 799px) {
   .navbar_navigation-items {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 799px) {
   .navbar_toggle-button {
     display: none;
   }
