@@ -31,7 +31,7 @@ export default class about extends Component {
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: `63px` }}>
+        <main>
           <Container>
             <h1 style={{ textAlign: `center` }}>a little about us.</h1>
             <div className="grid">

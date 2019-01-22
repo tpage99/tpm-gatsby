@@ -31,7 +31,7 @@ export default class index extends Component {
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: `63px` }}>
+        <main>
           <Container>
             <div>
               <h1>hi! we're the pages</h1>
@@ -40,6 +40,7 @@ export default class index extends Component {
                   <img
                     src="https://res.cloudinary.com/tpage99/image/upload/v1536888004/kendraNTaylor.png"
                     alt="kendra and taylor"
+                    className="feature-img"
                   />
                 </div>
                 <p className="text-block start-text">
