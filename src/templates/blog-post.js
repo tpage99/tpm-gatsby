@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Container from '../components/container';
-import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import '../assets/main.css';
 
 export default function Template({ data }) {

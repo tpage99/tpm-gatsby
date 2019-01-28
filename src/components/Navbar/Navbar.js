@@ -19,7 +19,10 @@ const navbar = props => (
             <a href="/about">About</a>
           </li>
           <li>
-            <a href="/">Services</a>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <a href="/">Blog</a>
           </li>
           <li>
             <a href="/">Contact</a>

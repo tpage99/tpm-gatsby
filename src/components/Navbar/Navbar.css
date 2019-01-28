@@ -14,7 +14,7 @@
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 0 7% 0 8%;
+  padding: 0 4% 0 5%;
 }
 
 .navbar_logo {
@@ -40,7 +40,7 @@
 }
 
 .navbar_navigation-items li {
-  padding: 0 0.5rem;
+  padding: 0.9rem 0.5rem 0 0.5rem;
 }
 
 .navbar_navigation-items a {
@@ -54,6 +54,9 @@
 }
 
 @media (max-width: 799px) {
+  .navbar {
+    position: static;
+  }
   .navbar_navigation-items {
     display: none;
   }
