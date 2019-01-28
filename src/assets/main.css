@@ -37,7 +37,10 @@ button:hover {
   color: black;
 }
 
-@media only screen and (min-width: 600px) {
+@media (max-width: 799px) {
+  main {
+    margin-top: 20px;
+  }
   .grid {
     display: flex;
     justify-content: center;
@@ -68,7 +71,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 799px) {
+@media (min-width: 799px) {
   .grid {
     display: grid;
     grid-gap: 20px;

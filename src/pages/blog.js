@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import Appnav from '../components/Navbar/AppNav';
 import SideDrawer from '../components/SideDrawer/SideDrawer';
 import Backdrop from '../components/Backdrop/Backdrop';
 import Container from '../components/container';
@@ -39,6 +40,7 @@ export default class about extends Component {
             <Link to="/">Home page</Link>
           </Container>
         </main>
+        <Appnav />
       </div>
     );
   }

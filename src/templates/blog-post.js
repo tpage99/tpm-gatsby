@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
 import { graphql } from 'gatsby';
 import '../assets/main.css';
@@ -16,6 +17,7 @@ export default function Template({ data }) {
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Container>
       </main>
+      <Appnav />
     </div>
   );
 }

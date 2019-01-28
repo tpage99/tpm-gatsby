@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../components/container';
 import Navbar from '../components/Navbar/Navbar';
+import Appnav from '../components/Navbar/AppNav';
 import SideDrawer from '../components/SideDrawer/SideDrawer';
 import Backdrop from '../components/Backdrop/Backdrop';
 import { Link } from 'gatsby';
@@ -83,7 +84,7 @@ export default class index extends Component {
                   static websites for local businesses. Low overhead, secure
                   websites that load very quickly.
                 </p>
-                <Link to="#">
+                <Link to="/services">
                   <button>Learn More</button>
                 </Link>
               </div>
@@ -104,7 +105,7 @@ export default class index extends Component {
                   and text thing to make your potluck at least look like it's
                   going to be really cool.
                 </p>
-                <Link to="#">
+                <Link to="/services">
                   <button>Learn More</button>
                 </Link>
               </div>
@@ -124,7 +125,7 @@ export default class index extends Component {
                   having a specially crafted strategy that's geared towards
                   engagement.
                 </p>
-                <Link to="#">
+                <Link to="/services">
                   <button>Learn More</button>
                 </Link>
               </div>
@@ -132,6 +133,7 @@ export default class index extends Component {
             <Link to="/about/">About page</Link>
           </Container>
         </main>
+        <Appnav />
       </div>
     );
   }

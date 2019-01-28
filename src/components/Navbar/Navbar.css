@@ -10,6 +10,15 @@
   box-shadow: 0px 6px 26px -4px rgba(18, 18, 18, 1);
 }
 
+.app-nav {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rebeccapurple;
+  height: 56px;
+}
+
 .navbar_navigation {
   display: flex;
   height: 100%;
@@ -20,6 +29,7 @@
 .navbar_logo {
   margin-left: 0;
   padding-left: 0;
+  align-content: flex-start;
 }
 
 .navbar_logo a {
@@ -43,6 +53,20 @@
   padding: 0.9rem 0.5rem 0 0.5rem;
 }
 
+.navbar a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.app-nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .navbar_navigation-items a {
   color: whitesmoke;
   text-decoration: none;
@@ -50,15 +74,38 @@
 
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
-  color: orange;
+  background-color: whitesmoke;
+  color: rebeccapurple;
+}
+
+@media all and (max-width: 410px) {
+  .app-nav > li {
+    flex-basis: 100%;
+  }
+  .navbar {
+    display: none;
+  }
+  .app-nav a {
+    display: block;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size-adjust: inherit;
+  }
+  .navbar_navigation-items a:active {
+    background-color: whitesmoke;
+    color: rebeccapurple;
+  }
 }
 
 @media (max-width: 799px) {
   .navbar {
-    position: static;
+    display: none;
   }
   .navbar_navigation-items {
-    display: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
   }
 }
 
@@ -68,5 +115,8 @@
   }
   .toolbar_logo {
     margin: 0;
+  }
+  .app-nav {
+    display: none;
   }
 }
