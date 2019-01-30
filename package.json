@@ -31,8 +31,10 @@
     "react-spring": "^7.2.9",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
+    "typography-theme-alton": "^0.16.18",
     "typography-theme-bootstrap": "^0.16.18",
-    "typography-theme-lawton": "^0.16.18"
+    "typography-theme-lawton": "^0.16.18",
+    "typography-theme-noriega": "^0.16.18"
   },
   "repository": {
     "type": "git",

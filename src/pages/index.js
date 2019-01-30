@@ -57,16 +57,7 @@ export default class index extends Component {
             </div>
           </Container>
           <div>
-            <h2
-              style={{
-                textAlign: `center`,
-                background: `rebeccapurple`,
-                color: `whitesmoke`,
-                padding: `20px`,
-              }}
-            >
-              check out some of the stuff we do.
-            </h2>
+            <h2 className="divider">check out some of the stuff we do.</h2>
           </div>
           <Container>
             <div className="grid">

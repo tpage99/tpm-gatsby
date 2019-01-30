@@ -1,9 +1,9 @@
 .navbar {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
-  background: rebeccapurple;
+  background: rgb(161, 73, 0);
   height: 56px;
   -webkit-box-shadow: 0px 6px 26px -4px rgba(18, 18, 18, 1);
   -moz-box-shadow: 0px 6px 26px -4px rgba(18, 18, 18, 1);
@@ -15,7 +15,7 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background: rebeccapurple;
+  background: rgb(161, 73, 0);
   height: 56px;
 }
 
@@ -75,7 +75,7 @@
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
   background-color: whitesmoke;
-  color: rebeccapurple;
+  color: rgb(161, 73, 0);
 }
 
 @media all and (max-width: 410px) {
@@ -94,7 +94,7 @@
   }
   .navbar_navigation-items a:active {
     background-color: whitesmoke;
-    color: rebeccapurple;
+    color: rgb(161, 73, 0);
   }
 }
 
