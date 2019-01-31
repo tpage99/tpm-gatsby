@@ -1,6 +1,5 @@
 import React from 'react';
 
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import './Navbar.css';
 
 const navbar = props => (
@@ -10,9 +9,7 @@ const navbar = props => (
         <a href="/">thePagesMedia</a>
       </div>
       <div className="spacer" />
-      <div className="navbar_toggle-button">
-        <DrawerToggleButton click={props.drawerClickHandler} />
-      </div>
+      <div className="navbar_toggle-button" />
       <div className="navbar_navigation-items">
         <ul>
           <li>
