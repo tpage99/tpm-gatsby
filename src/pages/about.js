@@ -17,7 +17,8 @@ export default class about extends Component {
               <div className="img-fluid">
                 <img
                   src="https://res.cloudinary.com/tpage99/image/upload/v1546835047/web%20assets/kendra_website_final.jpg"
-                  alt="kendra portfolio"
+                  alt="kendra profile"
+                  className="feature-img"
                 />
               </div>
               <p className="text-block">
@@ -34,6 +35,7 @@ export default class about extends Component {
                 <img
                   src="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
                   alt="taylor profile"
+                  className="feature-img"
                 />
               </div>
               <p className="text-block start-text">

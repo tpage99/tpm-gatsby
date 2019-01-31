@@ -13,8 +13,19 @@ export default class index extends Component {
         <main>
           <Container>
             <div>
-              <h1>hi! we're the pages</h1>
               <div className="grid">
+                <div className="text-block">
+                  <h1>hi! we're the pages</h1>
+                  <p>
+                    We're a married couple living in the Springfield area that
+                    enjoys helping companies we love become more accessible to
+                    others. <br />
+                    <br />
+                    We provide social media and web based solutions that help
+                    put local businesses within easy reach of people in the
+                    Springfield area, even if they don't know you yet.
+                  </p>
+                </div>
                 <div className="img-fluid">
                   <img
                     src="https://res.cloudinary.com/tpage99/image/upload/v1536888004/kendraNTaylor.png"
@@ -22,15 +33,6 @@ export default class index extends Component {
                     className="feature-img"
                   />
                 </div>
-                <p className="text-block start-text">
-                  We're a married couple living in the Springfield area that
-                  enjoys helping companies we love become more accessible to
-                  others. <br />
-                  <br />
-                  We provide social media and web based solutions that help put
-                  local businesses within easy reach of people in the
-                  Springfield area, even if they don't know you yet.
-                </p>
               </div>
             </div>
           </Container>
