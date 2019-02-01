@@ -32,7 +32,7 @@ export default class contact extends Component {
                   <input name="bot-field" />
                 </label>
               </div>
-              <div>
+              <div className="form-input">
                 <label for="inputName4">Name</label>
                 <input
                   type="text"
@@ -43,7 +43,7 @@ export default class contact extends Component {
                   required
                 />
               </div>
-              <div>
+              <div className="form-input">
                 <label for="inputEmail4">Email</label>
                 <input
                   type="email"
@@ -54,7 +54,7 @@ export default class contact extends Component {
                   required
                 />
               </div>
-              <div>
+              <div className="form-input">
                 <label for="inputBusiness">Name of Business</label>
                 <input
                   type="text"
@@ -64,7 +64,7 @@ export default class contact extends Component {
                   placeholder="Team Awesome, Inc."
                 />
               </div>
-              <div className="form-group col-lg-6">
+              <div className="form-input">
                 <label for="inputCity">City</label>
                 <input
                   type="text"
@@ -74,7 +74,7 @@ export default class contact extends Component {
                   placeholder="Springfield"
                 />
               </div>
-              <div>
+              <div className="form-textarea">
                 <label for="formControlTextArea">
                   Tell us about how we can help
                 </label>
@@ -95,7 +95,7 @@ export default class contact extends Component {
                   Submit
                 </button>
               </div>
-              <p id="submit-help" className="help-text">
+              <p className="help-text">
                 We promise to only use your information to contact you.
               </p>
             </form>

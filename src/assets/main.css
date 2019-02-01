@@ -74,6 +74,12 @@ button:hover {
   border: solid whitesmoke 2px;
 }
 
+.form {
+  margin: auto;
+  align-content: center;
+  max-width: 80%;
+}
+
 .invisible {
   display: none;
 }
@@ -81,17 +87,31 @@ button:hover {
 .contact {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: fit-content;
-  grid-auto-flow: dense;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+input,
+textarea {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-input {
+  grid-column: span 2;
+}
+
+.form-textarea {
+  grid-column: span 4;
 }
 
 .help-text {
   font-size: 0.8rem;
   font-style: italic;
+}
+
+input,
+label {
+  display: block;
 }
 
 @media (max-width: 799px) {
@@ -126,6 +146,11 @@ button:hover {
   }
   .grid button {
     margin-bottom: 2rem;
+  }
+  .contact {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
   }
 }
 
