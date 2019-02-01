@@ -80,7 +80,7 @@
 
 @media all and (max-width: 410px) {
   .app-nav > li {
-    flex-basis: 100%;
+    flex: 1 1 auto;
   }
   .navbar {
     display: none;
