@@ -74,6 +74,26 @@ button:hover {
   border: solid whitesmoke 2px;
 }
 
+.invisible {
+  display: none;
+}
+
+.contact {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: fit-content;
+  grid-auto-flow: dense;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
+.help-text {
+  font-size: 0.5rem;
+  font-style: italic;
+}
+
 @media (max-width: 799px) {
   main {
     margin-top: 20px;

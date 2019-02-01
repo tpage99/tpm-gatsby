@@ -5,7 +5,7 @@ import Container from '../components/container';
 import { Link } from 'gatsby';
 import '../assets/main.css';
 
-export default class about extends Component {
+export default class blog extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
