@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
-import { Link } from 'gatsby';
 import '../assets/main.css';
 
 export default class about extends Component {
@@ -64,17 +63,6 @@ export default class about extends Component {
               but you don't know or care too much about the details - you just
               know you don't want to have to do it yourself. Let us help!
             </p>
-            <Link
-              to="/"
-              activeStyle={{
-                color: 'red',
-              }}
-              state={{
-                pleasant: 'reasonably',
-              }}
-            >
-              Home page
-            </Link>
           </Container>
         </main>
         <Appnav />

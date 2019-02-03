@@ -30,9 +30,6 @@ export default function BlogPage({ data }) {
               </li>
             ))}
           </ul>
-          <Link to="/">
-            <button>Home page</button>
-          </Link>
         </Container>
       </main>
       <Appnav />

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
-import { Link } from 'gatsby';
 import '../assets/main.css';
 
 export default class services extends Component {
@@ -123,9 +122,6 @@ export default class services extends Component {
                 </div>
               </div>
             </div>
-            <Link to="/">
-              <button>Home page</button>
-            </Link>
           </Container>
         </main>
         <Appnav />
