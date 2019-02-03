@@ -1,6 +1,8 @@
 ---
-path: '/blog/first-post'
+path: '/blog/first-post/'
 title: 'First Blog Post'
+date: 'January 27, 2019'
+description: 'A little test data for the very first post'
 ---
 
 This is our first post! It's gonna look good eventually. Don't you worry. 
