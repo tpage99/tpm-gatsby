@@ -116,7 +116,7 @@ button:hover {
 
 input,
 textarea {
-  border-radius: 8px;
+  border-radius: 6px;
   width: 100%;
 }
 
@@ -172,9 +172,13 @@ label {
     margin-bottom: 2rem;
   }
   .contact {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .contact input {
+    margin-bottom: 20px;
   }
 }
 

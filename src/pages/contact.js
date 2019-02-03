@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
-import { Link } from 'gatsby';
 import '../assets/main.css';
 
 export default class contact extends Component {
@@ -39,7 +38,7 @@ export default class contact extends Component {
                   name="name"
                   className="form-control"
                   id="inputName4"
-                  placeholder="Name (required)"
+                  placeholder=" Name (required)"
                   required
                 />
               </div>
@@ -50,7 +49,7 @@ export default class contact extends Component {
                   name="email"
                   className="form-control"
                   id="inputEmail4"
-                  placeholder="Email (required)"
+                  placeholder=" Email (required)"
                   required
                 />
               </div>
@@ -61,7 +60,7 @@ export default class contact extends Component {
                   name="name of business"
                   className="form-control"
                   id="inputBusiness"
-                  placeholder="Team Awesome, Inc."
+                  placeholder=" Team Awesome, Inc."
                 />
               </div>
               <div className="form-input">
@@ -71,7 +70,7 @@ export default class contact extends Component {
                   name="city"
                   className="form-control"
                   id="inputCity"
-                  placeholder="Springfield"
+                  placeholder=" Springfield"
                 />
               </div>
               <div className="form-textarea">
@@ -81,27 +80,19 @@ export default class contact extends Component {
                 <textarea
                   className="form-control"
                   name="text-field"
-                  id="formControlTextArea"
                   rows="3"
-                  placeholder="Details on what services you're interested in..."
+                  placeholder=" Details on what services you're interested in..."
                 />
               </div>
               <div>
-                <button
-                  type="submit"
-                  className="btn btn-outline-light btn-lg"
-                  aria-describedby="submit-help"
-                >
+                <button type="submit" aria-describedby="submit-help">
                   Submit
                 </button>
               </div>
-              <p className="help-text">
+              <p className="help-text start-text">
                 We promise to only use your information to contact you.
               </p>
             </form>
-            <Link to="/">
-              <button>Home page</button>
-            </Link>
           </Container>
         </main>
         <Appnav />
