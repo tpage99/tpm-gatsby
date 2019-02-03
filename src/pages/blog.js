@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import HomeIcon from '../components/HomeIcon/HomeIcon';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
 import { Link } from 'gatsby';
@@ -10,6 +11,7 @@ export default function BlogPage({ data }) {
   return (
     <div style={{ height: `100%` }}>
       <Navbar />
+      <HomeIcon />
       <main>
         <Container>
           <h1 style={{ textAlign: `center` }}>just some stuff we wrote.</h1>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import HomeIcon from '../components/HomeIcon/HomeIcon';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
 import '../assets/main.css';
@@ -9,6 +10,7 @@ export default class about extends Component {
     return (
       <div style={{ height: `100%` }}>
         <Navbar />
+        <HomeIcon />
         <main>
           <Container>
             <h1 style={{ textAlign: `center` }}>a little about us.</h1>
