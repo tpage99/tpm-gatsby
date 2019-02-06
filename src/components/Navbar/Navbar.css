@@ -3,11 +3,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(161, 73, 0);
+  background: rgb(75, 75, 75);
+  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536888003/grey_wash_wall.png');
   height: 56px;
-  -webkit-box-shadow: 0px 6px 26px -4px rgba(18, 18, 18, 1);
-  -moz-box-shadow: 0px 6px 26px -4px rgba(18, 18, 18, 1);
-  box-shadow: 0px 6px 26px -4px rgba(18, 18, 18, 1);
 }
 
 .app-nav {
@@ -15,7 +13,8 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background: rgb(161, 73, 0);
+  background: whitesmoke;
+  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
   height: 56px;
 }
 
@@ -75,7 +74,7 @@
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
   background-color: whitesmoke;
-  color: rgb(161, 73, 0);
+  color: rgb(75, 75, 75);
 }
 
 @media all and (max-width: 410px) {
@@ -88,13 +87,14 @@
   .app-nav a {
     display: block;
     text-align: center;
-    padding: 18px 0;
+    padding: 14px 0;
     text-decoration: none;
     font-size-adjust: inherit;
+    color: rgb(75, 75, 75);
   }
   .navbar_navigation-items a:active {
     background-color: whitesmoke;
-    color: rgb(161, 73, 0);
+    color: rgb(75, 75, 75);
   }
 }
 
@@ -106,6 +106,9 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
+  }
+  .app-nav a {
+    color: rgb(75, 75, 75);
   }
 }
 

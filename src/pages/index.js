@@ -10,7 +10,7 @@ export default class index extends Component {
     return (
       <div style={{ height: `100%` }}>
         <Navbar />
-        <main>
+        <main className="home">
           <Container>
             <div>
               <div className="grid">

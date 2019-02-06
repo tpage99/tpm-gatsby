@@ -1,13 +1,14 @@
 .fab {
   width: 70px;
   height: 70px;
-  background-color: rgb(161, 73, 0);
+  background-color: whitesmoke;
+  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
   border-radius: 50%;
   box-shadow: 0 6px 10px 0 #666;
   transition: all 0.1s ease-in-out;
 
   font-size: 50px;
-  color: whitesmoke;
+  color: rgb(75, 75, 75);
   text-align: center;
   line-height: 70px;
 
