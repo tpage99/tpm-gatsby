@@ -142,6 +142,11 @@ label {
   display: block;
 }
 
+.first-text {
+  grid-column-start: span 2;
+  grid-row-start: 5;
+}
+
 @media (max-width: 799px) {
   main {
     margin-top: 100px;
@@ -182,10 +187,10 @@ label {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
-    margin: auto;
   }
   .contact input {
     margin-bottom: 20px;
+    width: 90%;
   }
 }
 
