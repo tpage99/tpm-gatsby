@@ -102,10 +102,8 @@ button:hover {
   border: solid whitesmoke 2px;
 }
 
-.form {
-  margin: auto;
-  align-content: center;
-  max-width: 80%;
+form .contact {
+  margin-bottom: 0;
 }
 
 .invisible {
@@ -135,9 +133,10 @@ textarea {
 .help-text {
   font-size: 0.8rem;
   font-style: italic;
+  margin-top: 0;
 }
 
-input,
+form input,
 label {
   display: block;
 }
@@ -150,7 +149,7 @@ label {
 @media (max-width: 799px) {
   main {
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
   .home {
     margin-top: 20px;
@@ -185,12 +184,17 @@ label {
   }
   .contact {
     display: flex;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
+  }
+  .contact .form-input,
+  .form-textarea {
+    width: 100%;
   }
   .contact input {
     margin-bottom: 20px;
-    width: 90%;
   }
 }
 

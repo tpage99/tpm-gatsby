@@ -24,8 +24,8 @@ export default class contact extends Component {
               name="contact"
               method="POST"
               action="/success"
-              netlify-honeypot="bot-field"
-              netlify
+              data-netlify-honeypot="bot-field"
+              data-netlify="true"
             >
               <div className="invisible">
                 <label>
@@ -34,7 +34,7 @@ export default class contact extends Component {
                 </label>
               </div>
               <div className="form-input">
-                <label for="inputName4">Name</label>
+                <label htmlFor="inputName4">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -45,7 +45,7 @@ export default class contact extends Component {
                 />
               </div>
               <div className="form-input">
-                <label for="inputEmail4">Email</label>
+                <label htmlFor="inputEmail4">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -56,7 +56,7 @@ export default class contact extends Component {
                 />
               </div>
               <div className="form-input">
-                <label for="inputBusiness">Name of Business</label>
+                <label htmlFor="inputBusiness">Name of Business</label>
                 <input
                   type="text"
                   name="name of business"
@@ -66,7 +66,7 @@ export default class contact extends Component {
                 />
               </div>
               <div className="form-input">
-                <label for="inputCity">City</label>
+                <label htmlFor="inputCity">City</label>
                 <input
                   type="text"
                   name="city"
@@ -76,7 +76,7 @@ export default class contact extends Component {
                 />
               </div>
               <div className="form-textarea">
-                <label for="formControlTextArea">
+                <label htmlFor="formControlTextArea">
                   Tell us about how we can help
                 </label>
                 <textarea
@@ -91,12 +91,10 @@ export default class contact extends Component {
                   Submit
                 </button>
               </div>
-              <div className="first-text">
-                <p className="help-text">
-                  We promise to only use your information to contact you.
-                </p>
-              </div>
             </form>
+            <p className="help-text">
+              We promise to only use your information to contact you.
+            </p>
           </Container>
         </main>
         <Appnav />
