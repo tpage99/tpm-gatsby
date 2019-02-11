@@ -17,9 +17,12 @@ export default function BlogPage({ data }) {
           <h1 style={{ textAlign: `center` }}>just some stuff we wrote.</h1>
           <ul>
             {data.allMarkdownRemark.edges.map(post => (
-              <li className="blog-card" style={{ listStyleType: `none` }}>
+              <li
+                className="blog-card"
+                style={{ listStyleType: `none` }}
+                key={post.node.id}
+              >
                 <Link
-                  key={post.node.id}
                   to={post.node.frontmatter.path}
                   style={{ textDecoration: `none` }}
                 >

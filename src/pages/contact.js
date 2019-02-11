@@ -87,14 +87,18 @@ export default class contact extends Component {
                 />
               </div>
               <div>
-                <button type="submit" aria-describedby="submit-form">
+                <button
+                  type="submit"
+                  aria-describedby="submit-form"
+                  className="submit-btn"
+                >
                   Submit
                 </button>
               </div>
+              <div className="help-text">
+                <p>We promise to only use your information to contact you.</p>
+              </div>
             </form>
-            <p className="help-text">
-              We promise to only use your information to contact you.
-            </p>
           </Container>
         </main>
         <Appnav />

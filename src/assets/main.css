@@ -25,7 +25,6 @@ button {
   border-radius: 0.25rem;
   color: whitesmoke;
   background: none;
-  font-family: system-ui, sans-serif;
   line-height: 1.2;
   white-space: nowrap;
   text-decoration: none;
@@ -130,10 +129,16 @@ textarea {
   grid-column: span 4;
 }
 
+.submit-btn {
+  margin-bottom: 0;
+}
+
 .help-text {
   font-size: 0.8rem;
   font-style: italic;
   margin-top: 0;
+  grid-column: span 2;
+  grid-row-start: 5;
 }
 
 form input,
@@ -193,8 +198,13 @@ label {
   .form-textarea {
     width: 100%;
   }
-  .contact input {
+  .contact input,
+  .form-textarea {
     margin-bottom: 20px;
+  }
+  .help-text {
+    width: 100%;
+    margin-top: 0;
   }
 }
 

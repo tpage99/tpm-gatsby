@@ -101,7 +101,6 @@ export default class index extends Component {
                 </Link>
               </div>
             </div>
-            <Link to="/about/">About page</Link>
           </Container>
         </main>
         <Appnav />
