@@ -19,7 +19,7 @@ const SiteMetadata = ({ pathname }) => (
     `}
     render={({
       site: {
-        siteMetadata: { siteUrl, title, twitter },
+        siteMetadata: { siteUrl, title, description, twitter },
       },
     }) => (
       <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
@@ -30,6 +30,7 @@ const SiteMetadata = ({ pathname }) => (
           name="viewport"
           content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
         />
+        <meta description={description} />
 
         <meta property="og:url" content={siteUrl} />
         <meta property="og:type" content="website" />
