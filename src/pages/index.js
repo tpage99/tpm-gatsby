@@ -3,7 +3,7 @@ import Container from '../components/container';
 import Navbar from '../components/Navbar/Navbar';
 import Appnav from '../components/Navbar/AppNav';
 import { Link } from 'gatsby';
-import SiteMetadata from '../components/site-metadata';
+import SiteMetadata from '../components/Site-Metadata';
 import '../assets/main.css';
 
 export default class index extends Component {
