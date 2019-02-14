@@ -7,6 +7,12 @@ if (process.env.ENVIRONMENT !== 'production') {
 const { spaceId, accessToken } = process.env;
 
 module.exports = {
+  siteMetadata: {
+    title: `thePagesMedia`,
+    siteUrl: `https://www.thepagesmedia.com`,
+    description: `Web development, design, and social media solutions for local small businesses in the Springfield, MO area.`,
+    twitter: `@taylorpage99`,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -17,6 +23,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`,
       },
     },
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

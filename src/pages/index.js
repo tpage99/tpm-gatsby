@@ -3,12 +3,14 @@ import Container from '../components/container';
 import Navbar from '../components/Navbar/Navbar';
 import Appnav from '../components/Navbar/AppNav';
 import { Link } from 'gatsby';
+import SiteMetadata from '../components/site-metadata';
 import '../assets/main.css';
 
 export default class index extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
+        <SiteMetadata />
         <Navbar />
         <main className="home">
           <Container>
