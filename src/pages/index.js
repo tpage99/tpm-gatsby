@@ -10,7 +10,7 @@ export default class index extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
-        <SiteMetadata />
+        <SiteMetadata pathname={this.props.location.pathname} />
         <Navbar />
         <main className="home">
           <Container>

@@ -12,6 +12,7 @@ const SiteMetadata = ({ pathname }) => (
           siteMetadata {
             siteUrl
             title
+            description
             twitter
           }
         }
@@ -30,7 +31,7 @@ const SiteMetadata = ({ pathname }) => (
           name="viewport"
           content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
         />
-        <meta description={description} />
+        <meta name="description" content={description} />
 
         <meta property="og:url" content={siteUrl} />
         <meta property="og:type" content="website" />
