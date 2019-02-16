@@ -3,12 +3,14 @@ import Navbar from '../components/Navbar/Navbar';
 import HomeIcon from '../components/HomeIcon/HomeIcon';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
+import SiteMetadata from '../components/Site-Metadata';
 import '../assets/main.css';
 
 export default class about extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
+        <SiteMetadata pathname={this.props.location.pathname} />
         <Navbar />
         <HomeIcon />
         <main>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import HomeIcon from '../components/HomeIcon/HomeIcon';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
 import { graphql } from 'gatsby';
@@ -11,6 +12,7 @@ export default function Template({ data }) {
   return (
     <div>
       <Navbar />
+      <HomeIcon />
       <main>
         <Container>
           <h1>{post.frontmatter.title}</h1>
