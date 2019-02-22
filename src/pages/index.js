@@ -17,7 +17,7 @@ export default class index extends Component {
             <div>
               <div className="grid">
                 <div className="text-block">
-                  <h1>hi! we're the pages</h1>
+                  <h1>hi! we're the pages.</h1>
                   <p>
                     We're a married couple living in the Springfield area that
                     enjoys helping companies we love become more accessible to
@@ -30,7 +30,7 @@ export default class index extends Component {
                 </div>
                 <div className="img-fluid">
                   <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1536888004/kendraNTaylor.png"
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1550802820/web%20assets/website_1-2.jpg"
                     alt="kendra and taylor"
                     className="feature-img"
                   />
@@ -39,7 +39,7 @@ export default class index extends Component {
             </div>
           </Container>
           <div>
-            <h2 className="divider">check out some of the stuff we do.</h2>
+            <h1 className="divider">check out some of the stuff we do.</h1>
           </div>
           <Container>
             <div className="grid">
@@ -50,7 +50,7 @@ export default class index extends Component {
                 />
               </div>
               <div className="text-front">
-                <h3>websites.</h3>
+                <h2>websites.</h2>
                 <p>
                   Websites are your digital storefront and a great way to make a
                   first impression with potential customers. We specialize in
@@ -70,7 +70,7 @@ export default class index extends Component {
                 />
               </div>
               <div className="start-text">
-                <h3>content creation.</h3>
+                <h2>content creation.</h2>
                 <p className="text-block">
                   Do you need to communicate some boring or routine information
                   but want to do it in a way that is appealing and encourages
@@ -91,7 +91,7 @@ export default class index extends Component {
                 />
               </div>
               <div className="text-front">
-                <h3>social media.</h3>
+                <h2>social media.</h2>
                 <p>
                   We can help you set up and establish a social media presence.
                   It's not just about having a personal Facebook page but rather

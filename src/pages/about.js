@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import HomeIcon from '../components/HomeIcon/HomeIcon';
 import Appnav from '../components/Navbar/AppNav';
 import Container from '../components/container';
+import { Link } from 'gatsby';
 import SiteMetadata from '../components/Site-Metadata';
 import '../assets/main.css';
 
@@ -49,15 +50,19 @@ export default class about extends Component {
                 as a remedy and resource for all sorts of issues.
               </p>
             </div>
-            <h2>Why You Should Work With Us</h2>
-            <h5>We're not your typical "tech" people.</h5>
+            <h1 style={{ textAlign: `center` }}>
+              why you should work with us.
+            </h1>
+            <h2>
+              We're not your typical <em>tech</em> people.
+            </h2>
             <p>
               We won't talk to you about Javascript frameworks or [insert random
               tech term here] and expect you to care or understand anything
               about it. We went to school to learn how to talk, and more
               importantly, how to <em>listen</em> to people.
             </p>
-            <h5>You need to be online.</h5>
+            <h2>You need to be online.</h2>
             <p>
               Maybe you've been doing ok with what you've got or without a
               website until now but the truth is you're missing out on customers
@@ -67,6 +72,34 @@ export default class about extends Component {
               but you don't know or care too much about the details - you just
               know you don't want to have to do it yourself. Let us help!
             </p>
+          </Container>
+          <div>
+            <h1 className="divider">let's get in touch.</h1>
+          </div>
+          <Container>
+            <div className="grid">
+              <div className="img-fluid">
+                <img
+                  src="https://res.cloudinary.com/tpage99/image/upload/v1550803731/web%20assets/highfive2.jpg"
+                  alt="taylor and kendra high-fiving"
+                  className="feature-img"
+                />
+              </div>
+              <p className="text-block">
+                We would love to be a part of the next big thing you're working
+                on. Whether it's a solution for your social media presence or
+                getting a website up and running, we can help you become more
+                connected with your customers.
+                <br />
+                <br />
+                If it sounds like we could be a great fit, head on over to the{' '}
+                <Link to="/contact" style={{ color: `whitesmoke` }}>
+                  contact page
+                </Link>{' '}
+                to give us a shout. We'd love to be a part of your next step in
+                reaching your customers.
+              </p>
+            </div>
           </Container>
         </main>
         <Appnav />
