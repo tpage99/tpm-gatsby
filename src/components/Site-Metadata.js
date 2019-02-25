@@ -43,6 +43,10 @@ const SiteMetadata = ({ pathname }) => (
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content={twitter} />
+        <meta
+          name="google-site-verification"
+          content="1R4rFQpnixwUVi2dmzSl37vwdeyFFoC69PRMC5H5edY"
+        />
       </Helmet>
     )}
   />
