@@ -25,14 +25,22 @@ export default class about extends Component {
                   className="feature-img"
                 />
               </div>
-              <p className="text-block">
-                Kendra is the social media ninja who uses her skills to build
-                brand authentic language that helps companies speak to their
-                customers like a real person. What does that even mean? She is
-                great at talking to your customers in a way that genuinely
-                represents your business and makes them feel like they can talk
-                back to you.
-              </p>
+              <div className="text-block">
+                <p>
+                  Kendra is the social media ninja who uses her skills to build
+                  brand authentic language that helps companies speak to their
+                  customers like a real person. What does that even mean? She is
+                  great at talking to your customers in a way that genuinely
+                  represents your business and makes them feel like they can
+                  talk back to you.
+                </p>
+                <p>
+                  Kendra's education is in counseling psychology, she's got an
+                  official Masters degree in it. Unofficial degrees include
+                  efficiency and planning. She gets super excited about
+                  organizing things and making them pretty.
+                </p>
+              </div>
             </div>
             <div className="grid">
               <div className="img-fluid">
@@ -42,13 +50,24 @@ export default class about extends Component {
                   className="feature-img"
                 />
               </div>
-              <p className="text-block start-text">
-                Taylor is the techie who loves learning about web development
-                and using technologies to solve real life problems. With a
-                Masters degree in counseling psychology and a lot of experience
-                in social work as a caseworker, Taylor uses technology regularly
-                as a remedy and resource for all sorts of issues.
-              </p>
+              <div className="text-block start-text">
+                <p>
+                  Taylor is the techie who loves learning about web development
+                  and using technologies to solve real life problems. With a
+                  Masters degree in counseling psychology and a lot of
+                  experience in social work as a caseworker, Taylor uses
+                  technology regularly as a remedy and resource for all sorts of
+                  issues.
+                </p>
+                <p>
+                  Taylor first became interested in web development at his
+                  church when the previous person who ran the website left.
+                  Taylor volunteered to learn and soon found that building and
+                  maintaining websites was a lot of fun. Now instead of just
+                  working with Wordpress sites or basic HTML, he's learning how
+                  to be build entire web applications.
+                </p>
+              </div>
             </div>
             <h1 style={{ textAlign: `center` }}>
               why you should work with us.
@@ -93,7 +112,7 @@ export default class about extends Component {
                 <br />
                 <br />
                 If it sounds like we could be a great fit, head on over to the{' '}
-                <Link to="/contact" style={{ color: `whitesmoke` }}>
+                <Link to="/contact" className="simple-link">
                   contact page
                 </Link>{' '}
                 to give us a shout. We'd love to be a part of your next step in

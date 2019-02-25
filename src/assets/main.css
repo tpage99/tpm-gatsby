@@ -151,6 +151,10 @@ label {
   grid-row-start: 5;
 }
 
+.simple-link {
+  color: whitesmoke;
+}
+
 @media (max-width: 799px) {
   main {
     margin-top: 100px;

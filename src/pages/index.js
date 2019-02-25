@@ -57,9 +57,12 @@ export default class index extends Component {
                   static websites for local businesses. Low overhead, secure
                   websites that load very quickly.
                 </p>
-                <Link to="/services">
-                  <button>Learn More</button>
-                </Link>
+                <p>
+                  Learn more about how we can help{' '}
+                  <Link to="/services" className="simple-link">
+                    design and develop your next website.
+                  </Link>
+                </p>
               </div>
             </div>
             <div className="grid">
@@ -78,9 +81,12 @@ export default class index extends Component {
                   and text thing to make your potluck at least look like it's
                   going to be really cool.
                 </p>
-                <Link to="/services">
-                  <button>Learn More</button>
-                </Link>
+                <p>
+                  Discover how we can help with{' '}
+                  <Link to="/services" className="simple-link">
+                    content design and creation for your next event.
+                  </Link>
+                </p>
               </div>
             </div>
             <div className="grid">
@@ -98,9 +104,13 @@ export default class index extends Component {
                   having a specially crafted strategy that's geared towards
                   engagement.
                 </p>
-                <Link to="/services">
-                  <button>Learn More</button>
-                </Link>
+                <p>
+                  Read on about how we can help{' '}
+                  <Link to="/services" className="simple-link">
+                    strategize and implement a social media solution for your
+                    business.
+                  </Link>
+                </p>
               </div>
             </div>
           </Container>
