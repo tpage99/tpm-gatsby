@@ -60,7 +60,10 @@ export default function BlogPage({ data }) {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(limit: 100) {
+    allMarkdownRemark(
+      limit: 100
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           id

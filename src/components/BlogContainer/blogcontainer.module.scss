@@ -1,0 +1,15 @@
+.bcontainer {
+  margin: 0;
+  padding-left: 6%;
+  padding-right: 5%;
+  color: whitesmoke;
+}
+
+@media (min-width: 799px) {
+  .bcontainer {
+    margin: 0;
+    padding-left: 8%;
+    padding-right: 12%;
+    color: whitesmoke;
+  }
+}

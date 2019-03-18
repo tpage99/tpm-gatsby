@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import HomeIcon from '../components/HomeIcon/HomeIcon';
 import Appnav from '../components/Navbar/AppNav';
-import Container from '../components/container';
+import BlogContainer from '../components/BlogContainer/BlogContainer';
 import { graphql } from 'gatsby';
 import '../assets/main.css';
 
@@ -14,10 +14,10 @@ export default function Template({ data }) {
       <Navbar />
       <HomeIcon />
       <main>
-        <Container>
+        <BlogContainer>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Container>
+        </BlogContainer>
       </main>
       <Appnav />
     </div>
