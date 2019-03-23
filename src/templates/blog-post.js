@@ -26,7 +26,8 @@ export default function Template({ data }) {
         <meta property="og:url" content={post.frontmatter.path} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en" />
-        <meta property="og:site_name" content={post.frontmatter.title} />
+        <meta property="og:site_name" content="The Pages Media" />
+        <meta property="og:title" content={post.frontmatter.title} />
         <meta
           property="og:image"
           content={`${post.frontmatter.path}${siteIcon}`}
@@ -36,6 +37,8 @@ export default function Template({ data }) {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@taylorpage99" />
+        <meta name="twitter:text:title" content={post.frontmatter.title} />
+        <meta name="twitter:title" content={post.frontmatter.title} />
         <meta
           name="twitter:image"
           content="https://res.cloudinary.com/tpage99/image/upload/v1550803731/web%20assets/highfive2.jpg"
