@@ -166,6 +166,11 @@ label {
   color: whitesmoke;
 }
 
+.blog-link a:visited {
+  background-color: black;
+  color: yellow;
+}
+
 @media (max-width: 799px) {
   main {
     margin-top: 100px;

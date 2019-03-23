@@ -16,7 +16,10 @@ export default function Template({ data }) {
       <main>
         <BlogContainer>
           <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            dangerouslySetInnerHTML={{ __html: post.html }}
+            className="simple-link blog-link"
+          />
         </BlogContainer>
       </main>
       <Appnav />
