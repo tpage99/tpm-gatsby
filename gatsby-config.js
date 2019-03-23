@@ -8,7 +8,7 @@ const { spaceId, accessToken } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: `thePagesMedia`,
+    title: `The Pages Media`,
     siteUrl: `https://www.thepagesmedia.com`,
     description: `Web development, design, and social media solutions for local small businesses in the Springfield, MO area.`,
     twitter: `@taylorpage99`,
@@ -35,10 +35,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `thePagesMedia`,
-        short_name: `thePagesMedia`,
+        name: `The Pages Media`,
+        short_name: `The Pages Media`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
+        background_color: `#fff`,
         theme_color: `#a2466c`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display

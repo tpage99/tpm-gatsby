@@ -13,7 +13,7 @@ export default function BlogPage({ data }) {
     <div style={{ height: `100%` }}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Blog | thePagesMedia</title>
+        <title>Blog | The Pages Media</title>
         <link rel="canonical" href="https://www.thepagesmedia.com/blog" />
         <meta
           name="description"
