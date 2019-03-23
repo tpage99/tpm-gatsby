@@ -17,7 +17,9 @@ export default class index extends Component {
             <div>
               <div className="grid">
                 <div className="text-block">
-                  <h1>hi! we're the pages.</h1>
+                  <h1>
+                    <span>hi! we're the pages.</span>
+                  </h1>
                   <p>
                     We're a married couple living in the Springfield area that
                     enjoys helping companies we love become more accessible to

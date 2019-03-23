@@ -42,13 +42,12 @@ button:hover {
   color: black;
 }
 
-/*.highlight {
+/* span {
   background-color: #a2466c;
   padding: 5px 5px 0 5px;
-  margin-bottom: 0;
   display: inline-block;
   line-height: 1;
-}*/
+} */
 
 .card {
   background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
