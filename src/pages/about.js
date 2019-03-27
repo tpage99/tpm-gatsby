@@ -65,7 +65,7 @@ export default class about extends Component {
                   Taylor volunteered to learn and soon found that building and
                   maintaining websites was a lot of fun. Now instead of just
                   working with Wordpress sites or basic HTML, he's learning how
-                  to be build entire web applications.
+                  to build entire web applications.
                 </p>
               </div>
             </div>
@@ -90,6 +90,19 @@ export default class about extends Component {
               you need a website, a Facebook page, or maybe just a site revamp
               but you don't know or care too much about the details - you just
               know you don't want to have to do it yourself. Let us help!
+            </p>
+            <h2>We actually like this stuff.</h2>
+            <p>
+              If you're reading this, chances are good you're either frustrated
+              with your current setup or looking for resources to give your
+              business some sort of digital footprint. More than likely, this
+              isn't how you and your business became successful in the first
+              place. The more time you spend working on your online presence
+              yourself, is time away from doing the thing you love - your
+              business. Let us help. We love technology and leveraging it to
+              help businesses right in our own Springfield area that we enjoy.
+              Let us do what we love so you can get back to working on your
+              business.
             </p>
           </Container>
           <div>

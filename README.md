@@ -4,7 +4,7 @@ A static site generator that uses React! How cool is that? It's proven to be a g
 
 ## Gatsby Resources
 
-Gatsby is an excellent tool with tons of documentation on their own site, [Gatsby Home Page](https://www.gatsbyjs.org), but I've found a lot of good examples and tutorials for Gatsby along the way. 
+Gatsby is an excellent tool with tons of documentation on the [Gatsby Home Page](https://www.gatsbyjs.org), but I've also found a lot of good examples and tutorials for Gatsby along the way. 
 
 ### Documentation
 
