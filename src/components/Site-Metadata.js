@@ -45,6 +45,10 @@ const SiteMetadata = ({ pathname }) => (
         <meta name="twitter:site" content={twitter} />
         <meta
           name="google-site-verification"
+          content="IlJ-tmM2ujsqcna3kA7WgbmqUWnOjCsYXgOdf_9owZg"
+        />
+        <meta
+          name="google-site-verification"
           content="1R4rFQpnixwUVi2dmzSl37vwdeyFFoC69PRMC5H5edY"
         />
       </Helmet>
