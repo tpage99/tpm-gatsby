@@ -56,6 +56,15 @@ export default class contact extends Component {
                 />
               </div>
               <div className="form-input">
+                <label htmlFor="inputPhone">Phone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="inputPhone"
+                  placeholder=" (417) 555-5555"
+                />
+              </div>
+              <div className="form-input">
                 <label htmlFor="inputBusiness">Name of Business</label>
                 <input
                   type="text"
@@ -73,6 +82,15 @@ export default class contact extends Component {
                   placeholder=" Springfield"
                 />
               </div>
+              <div className="form-input">
+                <label htmlFor="inputState">State</label>
+                <input
+                  type="text"
+                  name="state"
+                  id="inputState"
+                  placeholder=" MO"
+                />
+              </div>
               <div className="form-FL">
                 <label htmlFor="formControlTextArea">
                   Tell us about how we can help
@@ -86,9 +104,10 @@ export default class contact extends Component {
               <div className="form-FL">
               <label htmlFor="contact-select">What's the best way to get back in touch with you?</label>
                 <select id="contact-select">
-                    <option value="no preference">Choose an option, if applicable:</option>
-                    <option value="phone">Phone</option>
-                    <option value="email">Email</option>
+                  <option value="no preference">Choose an option, if applicable:</option>
+                  <option value="email">Email</option>
+                  <option value="phone">Phone</option>
+                  <option value="text">Text</option>
                 </select>
               </div>
               <div>
