@@ -91,13 +91,14 @@ export default class contact extends Component {
                   placeholder=" MO"
                 />
               </div>
-              <div className="form-FL">
-                <label htmlFor="formControlTextArea">
+              <div className="form-textarea">
+                <label htmlFor="contactDetails">
                   Tell us about how we can help
                 </label>
                 <textarea
                   name="text-field"
                   rows="3"
+                  id="contactDetails"
                   placeholder=" Details on what services you're interested in..."
                 />
               </div>
