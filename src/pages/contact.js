@@ -40,7 +40,6 @@ export default class contact extends Component {
                 <input
                   type="text"
                   name="name"
-                  className="form-control"
                   id="inputName4"
                   placeholder=" Name (required)"
                   required
@@ -51,7 +50,6 @@ export default class contact extends Component {
                 <input
                   type="email"
                   name="email"
-                  className="form-control"
                   id="inputEmail4"
                   placeholder=" Email (required)"
                   required
@@ -62,7 +60,6 @@ export default class contact extends Component {
                 <input
                   type="text"
                   name="name of business"
-                  className="form-control"
                   id="inputBusiness"
                   placeholder=" Team Awesome, Inc."
                 />
@@ -72,21 +69,27 @@ export default class contact extends Component {
                 <input
                   type="text"
                   name="city"
-                  className="form-control"
                   id="inputCity"
                   placeholder=" Springfield"
                 />
               </div>
-              <div className="form-textarea">
+              <div className="form-FL">
                 <label htmlFor="formControlTextArea">
                   Tell us about how we can help
                 </label>
                 <textarea
-                  className="form-control"
                   name="text-field"
                   rows="3"
                   placeholder=" Details on what services you're interested in..."
                 />
+              </div>
+              <div className="form-FL">
+              <label htmlFor="contact-select">What's the best way to get back in touch with you?</label>
+                <select id="contact-select">
+                    <option value="no preference">Choose an option, if applicable:</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                </select>
               </div>
               <div>
                 <button

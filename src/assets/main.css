@@ -136,7 +136,7 @@ textarea {
   grid-column: span 2;
 }
 
-.form-textarea {
+.form-FL {
   grid-column: span 4;
 }
 
@@ -148,8 +148,8 @@ textarea {
   font-size: 0.8rem;
   font-style: italic;
   margin-top: 0;
-  grid-column: span 2;
-  grid-row-start: 5;
+  grid-column: span 3;
+  grid-row-start: 6;
 }
 
 form input,
@@ -218,11 +218,14 @@ label {
     align-items: stretch;
     flex-wrap: wrap;
   }
-  .contact .form-input,
+  .contact select {
+    background: whitesmoke;
+  }
+  .contact select, .form-input,
   .form-textarea {
     width: 100%;
   }
-  .contact input,
+  .contact select, input,
   .form-textarea {
     margin-bottom: 20px;
   }
