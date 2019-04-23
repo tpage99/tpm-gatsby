@@ -1,12 +1,12 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Navbar from '../components/Navbar/Navbar';
-import HomeIcon from '../components/HomeIcon/HomeIcon';
-import Appnav from '../components/Navbar/AppNav';
-import BlogContainer from '../components/BlogContainer/BlogContainer';
-import { graphql } from 'gatsby';
-import '../assets/main.css';
-import siteIcon from '../images/icon.png';
+import React from "react";
+import { Helmet } from "react-helmet";
+import Navbar from "../components/Navbar/Navbar";
+import HomeIcon from "../components/HomeIcon/HomeIcon";
+import Appnav from "../components/Navbar/AppNav";
+import BlogContainer from "../components/BlogContainer/BlogContainer";
+import { graphql } from "gatsby";
+import "../assets/main.css";
+import siteIcon from "../images/icon.png";
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -30,14 +30,17 @@ export default function Template({ data }) {
         <meta property="og:title" content={post.frontmatter.title} />
         <meta
           property="og:image"
-          content={`${post.frontmatter.path}${siteIcon}`}
+          content="https://res.cloudinary.com/tpage99/image/upload/v1550803731/web%20assets/highfive2.jpg"
         />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="600" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@taylorpage99" />
-        <meta name="twitter:description" content={post.frontmatter.description} />
+        <meta
+          name="twitter:description"
+          content={post.frontmatter.description}
+        />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta
           name="twitter:image"
