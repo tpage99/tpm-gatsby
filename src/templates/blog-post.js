@@ -37,7 +37,7 @@ export default function Template({ data }) {
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@taylorpage99" />
-        <meta name="twitter:text:title" content={post.frontmatter.title} />
+        <meta name="twitter:description" content={post.frontmatter.description} />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta
           name="twitter:image"
