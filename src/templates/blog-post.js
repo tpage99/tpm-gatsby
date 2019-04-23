@@ -23,7 +23,10 @@ export default function Template({ data }) {
         />
         <meta name="description" content={post.frontmatter.description} />
 
-        <meta property="og:url" content={post.frontmatter.path} />
+        <meta
+          property="og:url"
+          content="https://www.thepagesmedia.com/{post.frontmatter.path}"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en" />
         <meta property="og:site_name" content="The Pages Media" />
