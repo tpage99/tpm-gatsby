@@ -25,7 +25,7 @@ export default function Template({ data }) {
 
         <meta
           property="og:url"
-          content="https://www.thepagesmedia.com/{post.frontmatter.path}"
+          content="https://www.thepagesmedia.com/"{post.frontmatter.path}
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en" />
