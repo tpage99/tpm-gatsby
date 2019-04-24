@@ -6,7 +6,6 @@ import Appnav from "../components/Navbar/AppNav";
 import BlogContainer from "../components/BlogContainer/BlogContainer";
 import { graphql } from "gatsby";
 import "../assets/main.css";
-import siteIcon from "../images/icon.png";
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
