@@ -15,7 +15,7 @@ There are a handful of reasons a blog is a good thing to have. Neither of us lov
 
 Ideal "clients" for us moving forward are small businesses. Why? Because we love local small businesses. Real people in our own community working hard to bring a better product and/or service to the people they live next to. We don't want to get rich and make the next Facebook or become some marketing giant in the Springfield area. We want to help small businesses be more successful reaching people in the Springfield area. 
 
-What does reaching customers in your area look like? Anymore, customers check out businesses before they even visit. Sometimes people make it as far as to pull into the parking lot of your business before they pull out their phone and Google your business. Not having a website or social media presense, or an antiquated one, can be a huge turnoff. Your online presence should match your physical store presence - alive and interactive. 
+What does reaching customers in your area look like? Anymore, customers check out businesses before they even visit. Sometimes people make it as far as to pull into the parking lot of your business before they pull out their phone and Google your business. Not having a website or social media presence, or an antiquated one, can be a huge turnoff. Your online presence should match your physical store presence - alive and interactive. 
 
 Our goal with this blog is to highlight work we've done with local business partners so customers can more easily find them online. Finding associated blog posts highlighting their work can really help solidify the credibility of a business. 
 
