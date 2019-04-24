@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import HomeIcon from '../components/HomeIcon/HomeIcon';
-import Appnav from '../components/Navbar/AppNav';
-import Container from '../components/container';
-import SiteMetadata from '../components/Site-Metadata';
-import '../assets/main.css';
+import React, { Component } from "react";
+import Navbar from "../components/Navbar/Navbar";
+import HomeIcon from "../components/HomeIcon/HomeIcon";
+import Appnav from "../components/Navbar/AppNav";
+import Container from "../components/container";
+import SiteMetadata from "../components/Site-Metadata";
+import "../assets/main.css";
 
 export default class contact extends Component {
   render() {
@@ -103,20 +103,20 @@ export default class contact extends Component {
                 />
               </div>
               <div className="form-FL">
-              <label htmlFor="contact-select">What's the best way to get back in touch with you?</label>
+                <label htmlFor="contact-select">
+                  What's the best way to get back in touch with you?
+                </label>
                 <select id="contact-select">
-                  <option value="no preference">Choose an option, if applicable:</option>
+                  <option value="no preference">
+                    Choose an option, if applicable:
+                  </option>
                   <option value="email">Email</option>
                   <option value="phone">Phone</option>
                   <option value="text">Text</option>
                 </select>
               </div>
-              <div>
-                <button
-                  type="submit"
-                  aria-describedby="submit-form"
-                  className="submit-btn"
-                >
+              <div className="submit-btn">
+                <button type="submit" aria-describedby="submit-form">
                   Submit
                 </button>
               </div>

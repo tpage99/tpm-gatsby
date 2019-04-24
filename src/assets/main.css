@@ -15,7 +15,7 @@ p {
 body {
   height: 100%;
   background-color: var(--main-bg-color);
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536888003/grey_wash_wall.png');
+  background-image: url("https://res.cloudinary.com/tpage99/image/upload/v1536888003/grey_wash_wall.png");
   color: var(--main-font-color);
 }
 
@@ -50,7 +50,7 @@ button:hover {
 } */
 
 .card {
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
+  background-image: url("https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png");
   border-radius: 8px;
   color: var(--alt-font-color);
   width: 75vw;
@@ -74,7 +74,7 @@ button:hover {
 
 .blog-card {
   background-color: whitesmoke;
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
+  background-image: url("https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png");
   color: var(--alt-font-color);
   width: 70vw;
   margin: 2rem auto;
@@ -102,7 +102,7 @@ button:hover {
 .divider {
   text-align: center;
   background: whitesmoke;
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
+  background-image: url("https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png");
   color: var(--alt-font-color);
   padding: 20px;
 }
@@ -140,8 +140,13 @@ textarea {
   grid-column: span 4;
 }
 
+.form-FL {
+  grid-column: span 2;
+}
+
 .submit-btn {
   margin-bottom: 0;
+  grid-row-start: 7;
 }
 
 .help-text {
@@ -149,7 +154,7 @@ textarea {
   font-style: italic;
   margin-top: 0;
   grid-column: span 3;
-  grid-row-start: 7;
+  grid-row-start: 8;
 }
 
 form input,
@@ -221,11 +226,13 @@ label {
   .contact select {
     background: whitesmoke;
   }
-  .contact select, .form-input,
+  .contact select,
+  .form-input,
   .form-textarea {
     width: 100%;
   }
-  .contact select, input,
+  .contact select,
+  input,
   .form-textarea {
     margin-bottom: 20px;
   }
