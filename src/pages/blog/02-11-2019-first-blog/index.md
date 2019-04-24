@@ -1,7 +1,7 @@
 ---
 path: '/blog/why-even-have-a-blog/'
 title: 'Why Even Have a Blog?'
-date: 'February 11, 2019'
+date: '2019-02-11'
 description: 'Our first blog post, what we want our blog to be about, and who we want to reach. Estimated reading time 4 minutes.'
 ---
 

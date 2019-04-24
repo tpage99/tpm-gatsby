@@ -1,8 +1,8 @@
 ---
-path: "/blog/one-simple-step-to-improve-your-website-today/"
-title: "One Simple Step to Improve Your Website Today"
-date: "April 24, 2019"
-description: "A simple and, most importantly, FREE way to improve your website today. Estimated reading time 3 minutes"
+path: '/blog/one-simple-step-to-improve-your-website-today/'
+title: 'One Simple Step to Improve Your Website Today'
+date: '2019-04-24'
+description: 'A simple and, most importantly, FREE way to improve your website today. Estimated reading time 3.5 minutes'
 ---
 
 Improving websites can be an endless ordeal. Spending hours upon hours working on improving search engine optimization results, choosing a great hosting provider, speed, image caching and optimization, and the list goes on. But there is one very simple and _free_ way to improve your website today - by making sure your website is secure.
@@ -13,7 +13,7 @@ You've likely noticed in the URL bar a little green padlock to the left of the U
 
 ### The Why
 
-Ok, so the little padlock either shows up on the website or not - what *IS* the big deal? Google [announced on their blog](https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html) back in 2018 that they were pushing for a more secure web. This is significant considering Google Chrome is the world's most popular browser ([and it's not even close](<https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#W3Counter_(May_2007_to_October_2018)>)). We'll save you a click and summarize that a more secure web in this instance refers to utilizing HTTPS on your website. What is HTTPS? Basically it's a website security certificate that ensures that your website "traffic" is encrypted, meaning your users know that they are safe while browsing your website. You can read a much more detailed and nerdier explanation [here](https://https.cio.gov/faq/).
+Ok, so the little padlock either shows up on the website or not - what _IS_ the big deal? Google [announced on their blog](https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html) back in 2018 that they were pushing for a more secure web. This is significant considering Google Chrome is the world's most popular browser ([and it's not even close](<https://en.wikipedia.org/wiki/Usage_share_of_web_browsers#W3Counter_(May_2007_to_October_2018)>)). We'll save you a click and summarize that a more secure web in this instance refers to utilizing HTTPS on your website. What is HTTPS? Basically it's a website security certificate that ensures that your website "traffic" is encrypted, meaning your users know that they are safe while browsing your website. You can read a much more detailed and nerdier explanation [here](https://https.cio.gov/faq/).
 
 Because Google prioritizes results that include HTTPS, it benefits SEO and also happens to add some extra security to your website. If you still need more convincing on the why, read _[Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)_.
 

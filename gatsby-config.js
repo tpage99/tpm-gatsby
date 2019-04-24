@@ -4,8 +4,6 @@ if (process.env.ENVIRONMENT !== 'production') {
   dotenv.config();
 }
 
-const { spaceId, accessToken } = process.env;
-
 module.exports = {
   siteMetadata: {
     title: `The Pages Media`,

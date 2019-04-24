@@ -1,7 +1,7 @@
 ---
 path: '/blog/using-facebook-as-a-marketing-tool-part-1'
 title: 'Using Facebook as a Marketing Tool - Part 1'
-date: 'March 17, 2019'
+date: '2019-03-17'
 description: 'How to use Facebook as a means of promoting your messages to customers. Estimated reading time 2 minutes.'
 ---
 

@@ -1,7 +1,7 @@
 ---
 path: '/blog/why-you-should-not-use-wordpress'
 title: 'Why You Should Not Use Wordpress'
-date: 'March 23, 2019'
+date: '2019-03-23'
 description: 'The reasons why we do not recommend Wordpress for most small businesses. Estimated reading time 4 minutes.'
 ---
 
