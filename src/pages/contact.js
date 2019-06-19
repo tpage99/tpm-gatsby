@@ -67,15 +67,6 @@ export default class contact extends Component {
                   placeholder=" Details on what services you're interested in..."
                 />
               </div>
-              <div className="form-FL">
-                <label htmlFor="contact-select">What's the best way to get back in touch with you?</label>
-                <select id="contact-select">
-                  <option value="no preference">Choose an option, if applicable:</option>
-                  <option value="email">Email</option>
-                  <option value="phone">Phone</option>
-                  <option value="text">Text</option>
-                </select>
-              </div>
               <div className="submit-btn">
                 <button type="submit" aria-describedby="submit-form">
                   Submit
