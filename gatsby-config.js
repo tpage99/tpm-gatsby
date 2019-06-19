@@ -1,3 +1,4 @@
+const path = require(`path`);
 const dotenv = require('dotenv');
 
 if (process.env.ENVIRONMENT !== 'production') {
@@ -14,6 +15,13 @@ module.exports = {
     twitter: `@taylorpage99`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -28,7 +36,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages/blog`,
-        name: 'blog',
+        name: 'blog'
       },
     },
     'gatsby-transformer-remark',
