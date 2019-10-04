@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import Container from '../components/container';
 import Navbar from '../components/Navbar/Navbar';
 import Appnav from '../components/Navbar/AppNav';
-import { Link } from 'gatsby';
 import SiteMetadata from '../components/Site-Metadata';
 import '../assets/main.css';
 
@@ -14,107 +14,53 @@ export default class index extends Component {
         <Navbar />
         <main className="home">
           <Container>
-            <div>
-              <div className="grid">
-                <div className="text-block">
-                  <h1>
-                    <span>hi! we're the pages.</span>
-                  </h1>
-                  <p>
-                    We're a married couple living in the Springfield area that
-                    enjoys helping companies we love become more accessible to
-                    others. <br />
-                    <br />
-                    We provide social media and web based solutions that help
-                    put local businesses within easy reach of people in the
-                    Springfield area, even if they don't know you yet.
-                  </p>
-                </div>
-                <div className="img-fluid">
-                  <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1550802820/web%20assets/website_1-2.jpg"
-                    alt="kendra and taylor"
-                    className="feature-img"
-                  />
-                </div>
-              </div>
+            <div style={{ textAlign: `center`, marginTop: `4rem` }}>
+              <h1>websites.</h1>
+              <h1>social media.</h1>
+              <h1>online presence.</h1>
+              <h1>all local to 417.</h1>
             </div>
-          </Container>
-          <div>
-            <h1 className="divider">check out some of the stuff we do.</h1>
-          </div>
-          <Container>
-            <div className="grid">
-              <div className="img-fluid">
+            <section className="grid" style={{ marginTop: `4rem` }}>
+              <div className="text-block" style={{ padding: `0.5rem 2.5rem 0 2rem` }}>
+                <h2>who we are.</h2>
+                <p>
+                  Hi, we're the Pages! We're a married couple living in the Springfield area that enjoys helping
+                  companies we love become more accessible to others.
+                </p>
+                <p>
+                  We provide social media and web based solutions that help put local businesses within easy reach of
+                  people in the Springfield area, even if they don't know you yet.
+                </p>
+              </div>
+              <img
+                src="https://res.cloudinary.com/tpage99/image/upload/v1550802820/web%20assets/website_1-2.jpg"
+                alt="kendra and taylor"
+                className="feature-img"
+              />
+            </section>
+            <section style={{ alignContent: `center`, marginTop: `4rem` }}>
+              <h2 style={{ textAlign: `center` }}>what are social media and web based solutions?</h2>
+              <div className="grid">
                 <img
                   src="https://res.cloudinary.com/tpage99/image/upload/v1546752856/web%20assets/KLSiteSkewedShadow.png"
-                  alt="kevin lane's catering website snapshot"
+                  alt="kevin lane's catering website"
+                  className="img-fluid"
                 />
-              </div>
-              <div className="text-front">
-                <h2>websites.</h2>
-                <p>
-                  Websites are your digital storefront and a great way to make a
-                  first impression with potential customers. We specialize in
-                  static websites for local businesses. Low overhead, secure
-                  websites that load very quickly.
-                </p>
-                <p>
-                  Learn more about how we can help{' '}
-                  <Link to="/services" className="simple-link">
-                    design and develop your next website.
-                  </Link>
-                </p>
-              </div>
-            </div>
-            <div className="grid">
-              <div className="img-fluid">
                 <img
                   src="https://res.cloudinary.com/tpage99/image/upload/v1546752861/web%20assets/photo_layers_3.png"
-                  alt="examples of created content/media"
+                  alt="several pieces of created content including promotion for a marriage series, post for facebook engagement, and inspirational graphic stacked on top of each other"
+                  className="img-fluid"
                 />
-              </div>
-              <div className="start-text">
-                <h2>content creation.</h2>
-                <p className="text-block">
-                  Do you need to communicate some boring or routine information
-                  but want to do it in a way that is appealing and encourages
-                  interaction with customers? Because we do the whole pictures
-                  and text thing to make your potluck at least look like it's
-                  going to be really cool.
-                </p>
-                <p>
-                  Discover how we can help with{' '}
-                  <Link to="/services" className="simple-link">
-                    content design and creation for your next event.
-                  </Link>
-                </p>
-              </div>
-            </div>
-            <div className="grid">
-              <div className="img-fluid">
                 <img
                   src="https://res.cloudinary.com/tpage99/image/upload/v1546752858/web%20assets/FBSiteSkewedShadow.png"
-                  alt="cash saver 417 facebook page"
+                  alt="facebook page for cash saver 417 located in springfield"
+                  className="img-fluid"
                 />
               </div>
-              <div className="text-front">
-                <h2>social media.</h2>
-                <p>
-                  We can help you set up and establish a social media presence.
-                  It's not just about having a personal Facebook page but rather
-                  having a specially crafted strategy that's geared towards
-                  engagement.
-                </p>
-                <p>
-                  Read on about how we can help{' '}
-                  <Link to="/services" className="simple-link">
-                    strategize and implement a social media solution for your
-                    business.
-                  </Link>
-                </p>
-              </div>
-            </div>
+              <button>
+                <Link to="/services">Learn More About Our Services</Link>
+              </button>
+            </section>
           </Container>
         </main>
         <Appnav />

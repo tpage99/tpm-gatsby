@@ -1,21 +1,21 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '20px',
   baseLineHeight: 1.666,
   scaleRatio: 2,
   googleFonts: [
     {
-      name: 'Merriweather',
-      styles: ['700'],
+      name: 'Montserrat',
+      styles: ['400']
     },
     {
       name: 'Lato',
-      styles: ['400', '400i', '700', '700i'],
+      styles: ['400', '400i', '700', '700i']
     },
   ],
-  headerFontFamily: ['Merriweather'],
-  bodyFontFamily: ['Lato'],
+  headerFontFamily: ['Montserrat'],
+  bodyFontFamily: ['Lato']
 });
 
 export default typography;

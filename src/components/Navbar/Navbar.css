@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(75, 75, 75);
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536888003/grey_wash_wall.png');
+  background: -webkit-linear-gradient(to left, #e2e2e2, #c9d6ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f7f7f7, #c9cdda);
   height: 56px;
 }
 
@@ -14,7 +14,7 @@
   right: 0;
   width: 100%;
   background: whitesmoke;
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
+  background-image: url("https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png");
   height: 56px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .navbar_logo a {
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -67,13 +67,13 @@
 }
 
 .navbar_navigation-items a {
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
 }
 
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
-  background-color: whitesmoke;
+  background-color: silver;
   color: rgb(75, 75, 75);
 }
 
