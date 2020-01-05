@@ -41,21 +41,30 @@ export default class index extends Component {
             <section style={{ alignContent: `center`, marginTop: `4rem` }}>
               <h2 style={{ textAlign: `center` }}>what are social media and web based solutions?</h2>
               <div className="grid">
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546752856/web%20assets/KLSiteSkewedShadow.png"
-                  alt="kevin lane's catering website"
-                  className="img-fluid"
-                />
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546752861/web%20assets/photo_layers_3.png"
-                  alt="several pieces of created content including promotion for a marriage series, post for facebook engagement, and inspirational graphic stacked on top of each other"
-                  className="img-fluid"
-                />
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546752858/web%20assets/FBSiteSkewedShadow.png"
-                  alt="facebook page for cash saver 417 located in springfield"
-                  className="img-fluid"
-                />
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1546752856/web%20assets/KLSiteSkewedShadow.png"
+                    alt="kevin lane's catering website"
+                    className="img-fluid"
+                  />
+                  <h3 style={{ textAlign: `center` }}>websites</h3>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1546752861/web%20assets/photo_layers_3.png"
+                    alt="several pieces of created content including promotion for a marriage series, post for facebook engagement, and inspirational graphic stacked on top of each other"
+                    className="img-fluid"
+                  />
+                  <h3 style={{ textAlign: `center` }}>content creation</h3>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1546752858/web%20assets/FBSiteSkewedShadow.png"
+                    alt="facebook page for cash saver 417 located in springfield"
+                    className="img-fluid"
+                  />
+                  <h3 style={{ textAlign: `center` }}>social media</h3>
+                </div>
               </div>
               <button>
                 <Link to="/services">Learn More About Our Services</Link>

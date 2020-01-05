@@ -73,8 +73,10 @@
 
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
-  background-color: silver;
-  color: rgb(75, 75, 75);
+  box-shadow: 0px 0px 17px gray;
+  z-index: 4;
+  transition: all 600ms ease-in-out;
+  transform: scale(1.1);
 }
 
 @media all and (max-width: 410px) {
