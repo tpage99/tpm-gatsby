@@ -1,75 +1,66 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
-import Container from '../components/container';
-import Navbar from '../components/Navbar/Navbar';
-import Appnav from '../components/Navbar/AppNav';
-import SiteMetadata from '../components/Site-Metadata';
-import '../assets/main.css';
+import React, { Component } from "react";
+import { Link } from "gatsby";
+
+import Container from "../components/container";
+import Appnav from "../components/Navbar/AppNav";
+import SiteMetadata from "../components/Site-Metadata";
+import "../assets/main.css";
 
 export default class index extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
         <SiteMetadata pathname={this.props.location.pathname} />
-        <Navbar />
-        <main className="home">
+        <main>
           <Container>
-            <div style={{ textAlign: `center`, marginTop: `4rem` }}>
-              <h1>websites.</h1>
-              <h1>social media.</h1>
-              <h1>online presence.</h1>
-              <h1>all local to 417.</h1>
+            <div
+              style={{
+                width: `100%`,
+                height: `100vh`,
+                backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1550803731/web%20assets/highfive2.jpg)`,
+                backgroundPosition: `center center`,
+                backgroundRepeat: `no-repeat`,
+                objectFit: `cover`
+              }}
+            >
+              <h1>the pages media</h1>
             </div>
-            <section className="grid" style={{ marginTop: `4rem` }}>
-              <div className="text-block" style={{ padding: `0.5rem 2.5rem 0 2rem` }}>
-                <h2>who we are.</h2>
-                <p>
-                  Hi, we're the Pages! We're a married couple living in the Springfield area that enjoys helping
-                  companies we love become more accessible to others.
-                </p>
-                <p>
-                  We provide social media and web based solutions that help put local businesses within easy reach of
-                  people in the Springfield area, even if they don't know you yet.
-                </p>
+            <section>
+              <div>
+                <h2>services</h2>
               </div>
-              <img
-                src="https://res.cloudinary.com/tpage99/image/upload/v1550802820/web%20assets/website_1-2.jpg"
-                alt="kendra and taylor"
-                className="feature-img"
-              />
-            </section>
-            <section style={{ alignContent: `center`, marginTop: `4rem` }}>
-              <h2 style={{ textAlign: `center` }}>what are social media and web based solutions?</h2>
-              <div className="grid">
-                <div>
-                  <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1546752856/web%20assets/KLSiteSkewedShadow.png"
-                    alt="kevin lane's catering website"
-                    className="img-fluid"
-                  />
-                  <h3 style={{ textAlign: `center` }}>websites</h3>
-                </div>
-                <div>
-                  <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1546752861/web%20assets/photo_layers_3.png"
-                    alt="several pieces of created content including promotion for a marriage series, post for facebook engagement, and inspirational graphic stacked on top of each other"
-                    className="img-fluid"
-                  />
-                  <h3 style={{ textAlign: `center` }}>content creation</h3>
-                </div>
-                <div>
-                  <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1546752858/web%20assets/FBSiteSkewedShadow.png"
-                    alt="facebook page for cash saver 417 located in springfield"
-                    className="img-fluid"
-                  />
-                  <h3 style={{ textAlign: `center` }}>social media</h3>
-                </div>
+              <div>
+                <h2>about</h2>
               </div>
-              <button>
-                <Link to="/services">Learn More About Our Services</Link>
-              </button>
+              <div>
+                <h2>blog</h2>
+              </div>
+              <div>
+                <h2>contact</h2>
+              </div>
             </section>
+            <footer>
+              <h3>pages</h3>
+              <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>services</li>
+                <li>blog</li>
+                <li>contact</li>
+              </ul>
+              <h3>legal</h3>
+              <ul>
+                <li>accessibility statement</li>
+                <li>terms and conditions</li>
+                <li>privacy policy</li>
+              </ul>
+              <h3>contact</h3>
+              <p>the pages media</p>
+              <p>334 E. Kearney St., #116</p>
+              <p>Springfield, MO 65803</p>
+              <p>info@thepagesmedia.com</p>
+              <p>417.423.9253</p>
+            </footer>
           </Container>
         </main>
         <Appnav />
