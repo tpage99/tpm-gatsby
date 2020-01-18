@@ -3,8 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: -webkit-linear-gradient(to left, #e2e2e2, #c9d6ff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f7f7f7, #c9cdda);
+  background: #2980b9;
   height: 56px;
 }
 
@@ -13,8 +12,7 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background: whitesmoke;
-  background-image: url("https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png");
+  background: #2980b9;
   height: 56px;
 }
 
@@ -32,7 +30,7 @@
 }
 
 .navbar_logo a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -67,13 +65,13 @@
 }
 
 .navbar_navigation-items a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
-  box-shadow: 0px 0px 17px gray;
+  box-shadow: 0px 0px 17px white;
   z-index: 4;
   transition: all 600ms ease-in-out;
   transform: scale(1.1);
@@ -92,11 +90,11 @@
     padding: 14px 0;
     text-decoration: none;
     font-size-adjust: inherit;
-    color: rgb(75, 75, 75);
+    color: white;
   }
   .navbar_navigation-items a:active {
     background-color: whitesmoke;
-    color: rgb(75, 75, 75);
+    color: white;
   }
 }
 
@@ -110,7 +108,7 @@
     justify-content: space-around;
   }
   .app-nav a {
-    color: rgb(75, 75, 75);
+    color: white;
   }
 }
 

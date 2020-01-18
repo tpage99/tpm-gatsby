@@ -17,12 +17,12 @@ export default class footer extends Component {
           <Link
             to="/contact"
             style={{
-              backgroundColor: `orange`,
+              backgroundColor: `#ffd581`,
               padding: `2rem`,
               boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
               maxWidth: `60%`,
               fontSize: `2rem`,
-              color: `white`,
+              color: `black`,
               textDecoration: `none`
             }}
           >
@@ -35,7 +35,7 @@ export default class footer extends Component {
             gridTemplateColumns: `1fr 1fr 1fr`,
             marginTop: `1rem`,
             padding: `2rem 1rem`,
-            backgroundColor: `blue`,
+            backgroundColor: `#2980B9`,
             color: `white`
           }}
         >
