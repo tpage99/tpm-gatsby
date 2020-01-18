@@ -5,6 +5,7 @@ import Container from "../components/container";
 import Appnav from "../components/Navbar/AppNav";
 import SiteMetadata from "../components/Site-Metadata";
 import "../assets/main.css";
+import LandingImage from "../components/landingImage";
 
 export default class index extends Component {
   render() {
@@ -13,28 +14,8 @@ export default class index extends Component {
         <SiteMetadata pathname={this.props.location.pathname} />
         <main>
           <Container>
-            <div
-              style={{
-                width: `100%`,
-                height: `100vh`,
-                backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1550803731/web%20assets/highfive2.jpg)`,
-                backgroundPosition: `center center`,
-                backgroundRepeat: `no-repeat`,
-                objectFit: `cover`,
-                textAlign: `center`
-              }}
-            >
-              <h1
-                style={{
-                  paddingTop: `20rem`,
-                  fontSize: `4.5rem`,
-                  color: `white`,
-                  textShadow: `rgba(0, 0, 0, 0.67) 5px 5px 8px`,
-                  textAlign: `center`
-                }}
-              >
-                the pages media
-              </h1>
+            <div style={{ maxWidth: `90%`, margin: `auto` }}>
+              <LandingImage />
             </div>
             <section style={{ textAlign: `center`, margin: `2rem 0rem` }}>
               <p style={{ padding: `3rem`, fontSize: `2rem`, lineHeight: `2rem` }}>
