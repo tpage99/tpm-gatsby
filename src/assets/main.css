@@ -1,5 +1,5 @@
 :root {
-  --main-font-color: black;
+  --main-font-color: rgb(19, 19, 19);
   --alt-font-color: gray;
 }
 
@@ -13,7 +13,7 @@ p {
 
 body {
   height: 100%;
-  background: whitesmoke; /* fallback for old browsers */
+  background: #fff; /* fallback for old browsers */
   color: var(--main-font-color);
 }
 

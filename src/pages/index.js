@@ -19,9 +19,9 @@ export default class index extends Component {
             </div>
             <section style={{ textAlign: `center`, margin: `2rem 0rem` }}>
               <p style={{ padding: `3rem`, fontSize: `2rem`, lineHeight: `2rem` }}>
-                We offer <span style={{ fontStyle: `italic`, fontWeight: `bold` }}>digital solutions</span> for local
-                businesses to solve their biggest problems - meeting their customers where they are. We work to help you
-                cut costs while increasing your exposure in our local 417 market.
+                We offer <span style={{ fontStyle: `italic`, fontWeight: `bold` }}>digital solutions</span> for
+                businesses to solve their biggest problems - meeting their customers where they are. We leverage
+                software and technology to help you cut costs while increasing your exposure.
               </p>
               <div
                 style={{

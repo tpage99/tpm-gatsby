@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "gatsby";
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 export default class footer extends Component {
   render() {
@@ -7,12 +7,15 @@ export default class footer extends Component {
       <footer>
         <section style={{ textAlign: `center`, margin: `2rem 0rem 4rem`, alignContent: `center` }}>
           <h3 style={{ fontSize: `3rem`, lineHeight: `2rem`, fontWeight: `bold`, paddingTop: `2rem` }}>let's meet.</h3>
-          <p style={{ padding: `0 1.5rem 2rem`, lineHeight: `1.75rem` }}>
+          <p style={{ padding: `0 1.5rem`, lineHeight: `1.75rem` }}>
             Websites design and development, social media strategy and implementation, small business headache
             resolutions, are all strategized and built right here in the local Springfield area. If you'd like to meet
             to go over your business pain-points to talk about some potential ways to fix them, we'd love to meet. Or
             even if just for coffee, we love helping local businesses solve problems. Give us a call or send us a
             message. Consultations are free and no obligation.
+          </p>
+          <p style={{ fontSize: `2rem`, padding: `0 1.5rem 2rem` }}>
+            We would love to be a part of the next big thing you're working on.
           </p>
           <Link
             to="/contact"
@@ -23,7 +26,7 @@ export default class footer extends Component {
               maxWidth: `60%`,
               fontSize: `2rem`,
               color: `black`,
-              textDecoration: `none`
+              textDecoration: `none`,
             }}
           >
             CTA - Do it!
@@ -36,7 +39,7 @@ export default class footer extends Component {
             marginTop: `1rem`,
             padding: `2rem 1rem`,
             backgroundColor: `#2980B9`,
-            color: `white`
+            color: `white`,
           }}
         >
           <div style={{ paddingLeft: `2rem` }}>
