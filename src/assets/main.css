@@ -13,7 +13,7 @@ p {
 
 body {
   height: 100%;
-  background: #fff; /* fallback for old browsers */
+  background: #ecf0f1; /* fallback for old browsers */
   color: var(--main-font-color);
 }
 

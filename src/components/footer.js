@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import React, { Component } from "react";
+import { Link } from "gatsby";
 
 export default class footer extends Component {
   render() {
     return (
       <footer>
         <section style={{ textAlign: `center`, margin: `2rem 0rem 4rem`, alignContent: `center` }}>
-          <h3 style={{ fontSize: `3rem`, lineHeight: `2rem`, fontWeight: `bold`, paddingTop: `2rem` }}>let's meet.</h3>
+          <h3 style={{ fontSize: `2.5rem`, lineHeight: `2rem`, fontWeight: `bold`, paddingTop: `2rem` }}>
+            let's meet.
+          </h3>
           <p style={{ padding: `0 1.5rem`, lineHeight: `1.75rem` }}>
-            Websites design and development, social media strategy and implementation, small business headache
-            resolutions, are all strategized and built right here in the local Springfield area. If you'd like to meet
-            to go over your business pain-points to talk about some potential ways to fix them, we'd love to meet. Or
-            even if just for coffee, we love helping local businesses solve problems. Give us a call or send us a
-            message. Consultations are free and no obligation.
+            Website design and development, social media strategy and implementation, and small business headache
+            resolutions are all strategized and built right here in the local Springfield area. If you'd like to meet to
+            go over your business pain-points and talk about some potential ways to fix them, we'd love to meet. Even if
+            just for coffee and consultation, we are enthusiastic about helping local businesses solve problems. Give us
+            a call or send us a message. Consultations are free and no obligation.
           </p>
           <p style={{ fontSize: `2rem`, padding: `0 1.5rem 2rem` }}>
             We would love to be a part of the next big thing you're working on.
@@ -20,16 +22,16 @@ export default class footer extends Component {
           <Link
             to="/contact"
             style={{
-              backgroundColor: `#ffd581`,
+              backgroundColor: `#CC5529`,
               padding: `2rem`,
               boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
               maxWidth: `60%`,
               fontSize: `2rem`,
-              color: `black`,
-              textDecoration: `none`,
+              color: `#ECF0F1`,
+              textDecoration: `none`
             }}
           >
-            CTA - Do it!
+            Start Today!
           </Link>
         </section>
         <section
@@ -39,7 +41,7 @@ export default class footer extends Component {
             marginTop: `1rem`,
             padding: `2rem 1rem`,
             backgroundColor: `#2980B9`,
-            color: `white`,
+            color: `#ECF0F1`
           }}
         >
           <div style={{ paddingLeft: `2rem` }}>
@@ -83,6 +85,17 @@ export default class footer extends Component {
             <p style={{ fontSize: `1rem` }}>417.423.9253</p>
           </div>
         </section>
+        <p style={{ backgroundColor: `#2980B9`, color: `#ECF0F1`, textAlign: `center`, fontSize: `1rem` }}>
+          Made in Southwest Missouri. Built with{" "}
+          <a href="https://gatsbyjs.org/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
+            GatsbyJS
+          </a>{" "}
+          and hosted on{" "}
+          <a href="https://www.netlify.com/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
+            Netlify
+          </a>
+          .
+        </p>
       </footer>
     );
   }

@@ -25,11 +25,12 @@ export default class index extends Component {
               </p>
               <div
                 style={{
-                  backgroundColor: `#ffd581`,
+                  backgroundColor: `#CC5529`,
                   padding: `2rem 1rem 0.5rem`,
                   boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
                   maxWidth: `75%`,
-                  margin: `auto`
+                  margin: `auto`,
+                  color: `#ECF0F1`
                 }}
               >
                 <h2 style={{ marginBottom: `0`, fontWeight: `bold`, fontSize: `2rem` }}>dig·i·tal so·lu·tions</h2>
@@ -67,7 +68,7 @@ export default class index extends Component {
                   style={{
                     textDecoration: `none`,
                     fontSize: `5rem`,
-                    color: `white`,
+                    color: `#ECF0F1`,
                     textShadow: `rgba(0, 0, 0, 0.67) 5px 5px 8px`
                   }}
                 >
@@ -92,7 +93,7 @@ export default class index extends Component {
                   style={{
                     textDecoration: `none`,
                     fontSize: `5rem`,
-                    color: `white`,
+                    color: `#ECF0F1`,
                     textShadow: `rgba(0, 0, 0, 0.67) 5px 5px 8px`
                   }}
                 >
@@ -117,7 +118,7 @@ export default class index extends Component {
                   style={{
                     textDecoration: `none`,
                     fontSize: `5.3rem`,
-                    color: `white`,
+                    color: `#ECF0F1`,
                     textShadow: `rgba(0, 0, 0, 0.67) 5px 5px 8px`
                   }}
                 >
@@ -142,7 +143,7 @@ export default class index extends Component {
                   style={{
                     textDecoration: `none`,
                     fontSize: `4.8rem`,
-                    color: `white`,
+                    color: `#ECF0F1`,
                     position: `relative`,
                     textShadow: `rgba(0, 0, 0, 0.67) 5px 5px 8px`
                   }}
