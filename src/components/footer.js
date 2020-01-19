@@ -5,6 +5,16 @@ export default class footer extends Component {
   render() {
     return (
       <footer>
+        <hr
+          style={{
+            display: `block`,
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            border: `0`,
+            borderTop: `1px solid gray`,
+            margin: `3rem 0 0`
+          }}
+        />
         <section style={{ textAlign: `center`, margin: `2rem 0rem 4rem`, alignContent: `center` }}>
           <h3 style={{ fontSize: `2.5rem`, lineHeight: `2rem`, fontWeight: `bold`, paddingTop: `2rem` }}>
             let's meet.

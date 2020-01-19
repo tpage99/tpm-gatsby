@@ -59,12 +59,24 @@ export default class about extends Component {
                 </p>
               </div>
             </section>
+            <hr
+              style={{
+                display: `block`,
+                marginLeft: `auto`,
+                marginRight: `auto`,
+                border: `0`,
+                borderTop: `1px solid gray`,
+                margin: `3rem 0 0`
+              }}
+            />
             <section style={{ margin: `2rem`, lineHeight: `2rem` }}>
-              <h1 style={{ textAlign: `center`, fontSize: `2.5rem`, padding: `2rem` }}>why you should work with us.</h1>
+              <h1 style={{ textAlign: `center`, fontSize: `2.5rem`, padding: `1rem 2rem 2rem` }}>
+                why you should work with us.
+              </h1>
               <h2 style={{ fontSize: `1.7rem` }}>
                 <span
                   style={{
-                    backgroundColor: `#CC5529`,
+                    backgroundColor: `#2980B9`,
                     padding: `0.5rem`,
                     boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
                     color: `white`
@@ -81,7 +93,7 @@ export default class about extends Component {
               <h2 style={{ fontSize: `1.7rem`, paddingTop: `2rem` }}>
                 <span
                   style={{
-                    backgroundColor: `#CC5529`,
+                    backgroundColor: `#2980B9`,
                     padding: `0.5rem`,
                     boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
                     color: `white`
@@ -98,7 +110,7 @@ export default class about extends Component {
               <h2 style={{ fontSize: `1.7rem`, paddingTop: `2rem`, color: `white` }}>
                 <span
                   style={{
-                    backgroundColor: `#CC5529`,
+                    backgroundColor: `#2980B9`,
                     padding: `0.5rem`,
                     boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`
                   }}
@@ -132,22 +144,11 @@ export default class about extends Component {
               >
                 We've got plenty more reasons why you should work with us, but maybe that's best over a coffee.
               </p>
-              <p style={{ padding: `2rem 3rem`, fontSize: `2rem` }}>
+              <p style={{ padding: `2rem 3rem 0`, fontSize: `2rem` }}>
                 Whether it's a solution for your social media presence or getting a website up and running, we can help
                 you become more connected with your customers.
               </p>
             </section>
-            <hr
-              style={{
-                display: `block`,
-                marginTop: `0.5rem`,
-                marginBottom: `0.5rem`,
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                borderStyle: `inset`,
-                borderWidth: `1px`
-              }}
-            />
           </Container>
         </main>
         <Appnav />
