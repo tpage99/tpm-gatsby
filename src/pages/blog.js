@@ -1,12 +1,12 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link , graphql } from 'gatsby';
-import Navbar from '../components/Navbar/Navbar';
-import HomeIcon from '../components/HomeIcon/HomeIcon';
-import Appnav from '../components/Navbar/AppNav';
-import Container from '../components/container';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { Link, graphql } from "gatsby";
+import Navbar from "../components/Navbar/Navbar";
+import HomeIcon from "../components/HomeIcon/HomeIcon";
+import Appnav from "../components/Navbar/AppNav";
+import Container from "../components/container";
 
-import '../assets/main.css';
+import "../assets/main.css";
 
 export default function BlogPage({ data }) {
   return (
@@ -28,17 +28,40 @@ export default function BlogPage({ data }) {
       <main>
         <Container>
           <h1 style={{ textAlign: `center` }}>just some stuff we wrote.</h1>
-          <ul>
-            {data.allMarkdownRemark.edges.map(post => (
-              <li className="blog-card" style={{ listStyleType: `none` }} key={post.node.id}>
-                <Link to={post.node.frontmatter.path} style={{ textDecoration: `none` }}>
-                  <h3 className="blog-title">{post.node.frontmatter.title}</h3>
-                  <p className="blog-date">{post.node.frontmatter.date}</p>
-                  <p className="blog-description">{post.node.frontmatter.description}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <section style={{ margin: `auto` }}>
+            <div
+              style={{
+                display: `grid`,
+                gridTemplateColumns: `1fr 1fr 1fr 1fr`
+              }}
+            >
+              {data.allMarkdownRemark.edges.map(post => (
+                <article className="blog-card" style={{ gridColumn: `span 2` }} key={post.node.id}>
+                  <h3 className="emHeader" style={{ marginBottom: `0` }}>
+                    {post.node.frontmatter.title}
+                  </h3>
+                  <p style={{ marginTop: `0` }}>
+                    <em>Last updated {post.node.frontmatter.date}</em>
+                  </p>
+                  <p style={{ paddingBottom: `1rem`, fontSize: `1.25rem`, lineHeight: `1.5rem` }}>
+                    {post.node.frontmatter.description}
+                  </p>
+                  <Link
+                    to={post.node.frontmatter.path}
+                    style={{
+                      textDecoration: `none`,
+                      backgroundColor: `#2980b9`,
+                      color: `white`,
+                      fontSize: `1.5rem`,
+                      padding: `0.5rem 1rem`
+                    }}
+                  >
+                    Read more
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </section>
         </Container>
       </main>
       <Appnav />

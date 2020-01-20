@@ -1,11 +1,14 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
+
 import Navbar from "../components/Navbar/Navbar";
 import HomeIcon from "../components/HomeIcon/HomeIcon";
 import Appnav from "../components/Navbar/AppNav";
 import BlogContainer from "../components/BlogContainer/BlogContainer";
-import '../assets/main.css';
+import Footer from "../components/footer";
+
+import "../assets/main.css";
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
@@ -46,10 +49,13 @@ export default function Template({ data }) {
       <HomeIcon />
       <main>
         <BlogContainer>
-          <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} className="simple-link blog-link" />
+          <h1>
+            <span className="emHeader">{post.frontmatter.title}</span>
+          </h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} className="blog" style={{ paddingBottom: `3rem` }} />
         </BlogContainer>
       </main>
+      <Footer />
       <Appnav />
     </div>
   );

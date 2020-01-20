@@ -17,7 +17,7 @@ export default class about extends Component {
           <Container>
             <h1 style={{ textAlign: `center`, paddingTop: `2rem` }}>meet your neighbors.</h1>
             <div style={{ display: `flex`, justifyContent: `space-evenly` }}>
-              <div className="img-fluid" style={{ marginBottom: `0`, padding: `0 1rem` }}>
+              <div className="img-fluid" style={{ marginBottom: `0` }}>
                 <img
                   src="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
                   alt="taylor, web developer"
@@ -26,9 +26,9 @@ export default class about extends Component {
                 />
                 <p style={{ marginTop: `0`, paddingTop: `0`, textAlign: `center` }}>Taylor, web developer</p>
               </div>
-              <div className="img-fluid" style={{ marginBottom: `0`, padding: `0 1rem` }}>
+              <div className="img-fluid" style={{ marginBottom: `0` }}>
                 <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546835047/web%20assets/kendra_website_final.jpg"
+                  src="https://res.cloudinary.com/tpage99/image/upload/v1579543942/web%20assets/kendra_profile.png"
                   alt="kendra, marketing consultant"
                   className="feature-img"
                   style={{ marginBottom: `0` }}
