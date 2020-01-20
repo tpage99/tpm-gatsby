@@ -18,7 +18,7 @@ export default class index extends Component {
               <LandingImage />
             </div>
             <section style={{ textAlign: `center`, margin: `2rem 0rem` }}>
-              <p style={{ padding: `3rem`, fontSize: `2rem`, lineHeight: `2rem` }}>
+              <p style={{ padding: `3rem`, fontSize: `3rem`, lineHeight: `2.75rem` }}>
                 We offer <span style={{ fontStyle: `italic`, fontWeight: `bold` }}>digital solutions</span> for
                 businesses to solve their biggest problems - meeting their customers where they are. We leverage
                 software and technology to help you cut costs while increasing your exposure.
@@ -26,16 +26,16 @@ export default class index extends Component {
               <div
                 style={{
                   backgroundColor: `#CC5529`,
-                  padding: `2rem 1rem 0.5rem`,
+                  padding: `0 2rem 0.5rem`,
                   boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
                   maxWidth: `75%`,
                   margin: `auto`,
                   color: `#ECF0F1`
                 }}
               >
-                <h2 style={{ marginBottom: `0`, fontWeight: `bold`, fontSize: `2rem` }}>dig·i·tal so·lu·tions</h2>
-                <p style={{ marginTop: `0`, fontStyle: `italic`, fontSize: `1.5rem` }}>/ˈdijidl/ /səˈlo͞oSH(ə)nz/</p>
-                <p>
+                <h2 style={{ marginBottom: `0`, fontWeight: `bold`, fontSize: `3rem` }}>dig·i·tal so·lu·tions</h2>
+                <p style={{ marginTop: `0`, fontStyle: `italic`, fontSize: `2rem` }}>/ˈdijidl/ /səˈlo͞oSH(ə)nz/</p>
+                <p style={{ fontSize: `1.75rem`, lineHeight: `2rem` }}>
                   Virtual or electronic products or software that help solve real world problems in a consistent,
                   economic, and reliable manner. Websites, social media, content strategy, search engine optimization
                   (SEO), business software as a service, and progressive web apps are all examples of digital solutions.
