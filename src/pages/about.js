@@ -37,23 +37,14 @@ export default class about extends Component {
               </div>
             </div>
             <section style={{ textAlign: `center` }}>
-              <p style={{ padding: `3rem`, fontSize: `3rem`, lineHeight: `2.95rem`, letterSpacing: `0.01rem` }}>
+              <p className="hero-text">
                 We're Taylor and Kendra Page. A husband and wife team that love to spend time working on projects
                 together and making our local Springfield community better. We moved to the Springfield area from Ohio
                 for college and loved it so much - we stayed! Now we're raising a family here and we're determined to
                 help local businesses succeed.{" "}
               </p>
-              <div
-                style={{
-                  backgroundColor: `#CC5529`,
-                  padding: `1rem 2rem 0.5rem`,
-                  boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
-                  margin: `auto`,
-                  color: `white`,
-                  maxWidth: `60%`
-                }}
-              >
-                <p style={{ fontSize: `1.75rem`, lineHeight: `2rem` }}>
+              <div className="feature-card">
+                <p>
                   We like to help local area businesses in Springfield, Missouri reach their potential by helping them
                   get in front of their clients. We are all neighbors, after all.
                 </p>

@@ -52,7 +52,7 @@ export default class services extends Component {
                       Your customers want to meet you online first. Make sure you're there to say hello and answer
                       questions they have about your business.
                     </p>
-                    <Link to="/#" className="emLink">
+                    <Link to="/services/websites" className="emLink">
                       Learn More
                     </Link>
                   </div>
@@ -69,7 +69,7 @@ export default class services extends Component {
                   />
                   <div>
                     <p>Even grandma uses Facebook now. Become more accessible to your customers.</p>
-                    <Link to="/#" className="emLink">
+                    <Link to="/services/social-media" className="emLink">
                       Learn More
                     </Link>
                   </div>
@@ -90,7 +90,7 @@ export default class services extends Component {
                       yourself down to only selling your products in your physical store, boy have we got some news for
                       you.
                     </p>
-                    <Link to="/#" className="emLink">
+                    <Link to="/services/ecommerce" className="emLink">
                       Learn More
                     </Link>
                   </div>
@@ -110,7 +110,7 @@ export default class services extends Component {
                       Your customers are either already using your online info or they're looking for it. We'll take a
                       look at what ya got and let ya know what we think.
                     </p>
-                    <Link to="/#" className="emLink">
+                    <Link to="/services/review-of-current-setup" className="emLink">
                       Learn More
                     </Link>
                   </div>
@@ -130,7 +130,7 @@ export default class services extends Component {
                       You're pretty confident in your abilities but need some help with tools and knowledge to get
                       started. We got you.
                     </p>
-                    <Link to="/#" className="emLink">
+                    <Link to="/services/crash-course-trainings" className="emLink">
                       Learn More
                     </Link>
                   </div>
@@ -150,7 +150,7 @@ export default class services extends Component {
                       Sometimes you don't even know what you need. Get started on where to start.{" "}
                       <i>Consultation for services are free.</i>
                     </p>
-                    <Link to="/#" className="emLink">
+                    <Link to="/services/consultation" className="emLink">
                       Learn More
                     </Link>
                   </div>

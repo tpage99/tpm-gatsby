@@ -24,9 +24,7 @@ export default class footer extends Component {
             just for coffee and consultation, we are enthusiastic about helping local businesses solve problems. Give us
             a call or send us a message. Consultations are free and no obligation.
           </p>
-          <p style={{ fontSize: `2.25rem`, padding: `0 1.5rem 2rem` }}>
-            <strong>We would love to be a part of the next big thing you're working on.</strong>
-          </p>
+          <p className="footer-hero">We would love to be a part of the next big thing you're working on.</p>
           <Link
             to="/contact"
             style={{
@@ -42,18 +40,9 @@ export default class footer extends Component {
             <strong>Start Today!</strong>
           </Link>
         </section>
-        <section
-          style={{
-            display: `grid`,
-            gridTemplateColumns: `1fr 1fr 1fr`,
-            backgroundColor: `#2980B9`,
-            color: `#ECF0F1`,
-            marginBottom: `0`,
-            paddingBottom: `2rem`
-          }}
-        >
-          <div style={{ paddingLeft: `3rem` }}>
-            <h3 style={{ marginBottom: `0.75rem`, fontSize: `2rem` }}>pages</h3>
+        <section className="footer-grid">
+          <div className="footer-pages">
+            <h3>pages</h3>
             <div style={{ fontSize: `1.25rem` }}>
               <Link to="/" style={{ display: `block`, textDecoration: `none`, color: `white` }}>
                 home
@@ -73,21 +62,24 @@ export default class footer extends Component {
             </div>
           </div>
           <div>
-            <h3 style={{ marginBottom: `0.75rem`, fontSize: `2rem` }}>legal</h3>
+            <h3>legal</h3>
             <div style={{ fontSize: `1.25rem` }}>
-              <Link to="/a11y" style={{ display: `block`, textDecoration: `none`, color: `white` }}>
+              <Link to="/legal/a11y" style={{ display: `block`, textDecoration: `none`, color: `white` }}>
                 accessibility statement
               </Link>
-              <Link to="/terms-and-conditions" style={{ display: `block`, textDecoration: `none`, color: `white` }}>
+              <Link
+                to="/legal/terms-and-conditions"
+                style={{ display: `block`, textDecoration: `none`, color: `white` }}
+              >
                 terms and conditions
               </Link>
-              <Link to="/privacy-policy" style={{ display: `block`, textDecoration: `none`, color: `white` }}>
+              <Link to="/legal/privacy-policy" style={{ display: `block`, textDecoration: `none`, color: `white` }}>
                 privacy policy
               </Link>
             </div>
           </div>
           <div>
-            <h3 style={{ marginBottom: `0.75rem`, fontSize: `2rem` }}>contact</h3>
+            <h3>contact</h3>
             <div style={{ fontSize: `1.25rem`, lineHeight: `1.5rem` }}>
               <p>
                 334 E. Kearney St., #116
@@ -99,16 +91,7 @@ export default class footer extends Component {
             </div>
           </div>
         </section>
-        <p
-          style={{
-            backgroundColor: `#2980B9`,
-            color: `#ECF0F1`,
-            textAlign: `center`,
-            fontSize: `1rem`,
-            marginTop: `0`,
-            padding: `1rem`
-          }}
-        >
+        <p className="footer-notes">
           Made in Southwest Missouri. Built with{" "}
           <a href="https://gatsbyjs.org/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
             GatsbyJS

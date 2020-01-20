@@ -12,7 +12,7 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background: #2980b9;
+  background: #ecf0f1;
   height: 56px;
 }
 
@@ -60,7 +60,7 @@
 .app-nav a {
   display: block;
   text-align: center;
-  padding: 14px 10px;
+  padding: 1rem;
   text-decoration: none;
 }
 
@@ -88,10 +88,10 @@
   .app-nav a {
     display: block;
     text-align: center;
-    padding: 14px 0;
+    padding: 1rem;
     text-decoration: none;
     font-size-adjust: inherit;
-    color: white;
+    color: #2980b9;
   }
   .navbar_navigation-items a:active {
     background-color: whitesmoke;
@@ -109,7 +109,7 @@
     justify-content: space-around;
   }
   .app-nav a {
-    color: white;
+    color: #2980b9;
   }
 }
 
