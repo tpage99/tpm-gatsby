@@ -31,6 +31,43 @@ h4 {
   font-size: 2rem;
 }
 
+.emHeader {
+  background-color: #cc5529;
+  color: #ecf0f1;
+  padding: 1rem 1rem 0.1rem;
+}
+
+.emLink {
+  background-color: #2980b9;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 2px 5px 5px;
+  max-width: 60%;
+  font-size: 1.75rem;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.servCard {
+  grid-column: span 2;
+  text-align: center;
+  vertical-align: center;
+  padding: 2rem;
+  background-color: #ecf0f1;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px;
+}
+
+.vidCard {
+  margin: auto;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.vidCard p {
+  padding: 0 4rem 3rem;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 799px) {
 }
 
