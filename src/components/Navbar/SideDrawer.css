@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  padding-inline-start: 0;
 }
 
 .side-drawer li {
