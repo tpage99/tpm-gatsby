@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
-import HeroHeader from "./heroHeader";
+import HeroHeader from "./HeroHeader";
 
 const HeroNav = () => (
   <StaticQuery
