@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 
-import Navbar from "../../components/Navbar/Navbar";
-import HomeIcon from "../../components/HomeIcon/HomeIcon";
-import Appnav from "../../components/Navbar/AppNav";
+import HeroNav from "../../components/Navbar/HeroNav";
 import Container from "../../components/container";
 
 import "../../assets/main.css";
@@ -11,8 +9,7 @@ export default class Privacy extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
-        <Navbar />
-        <HomeIcon />
+        <HeroNav />
         <main>
           <Container>
             <div className="legal">
@@ -142,7 +139,6 @@ export default class Privacy extends Component {
             </div>
           </Container>
         </main>
-        <Appnav />
       </div>
     );
   }

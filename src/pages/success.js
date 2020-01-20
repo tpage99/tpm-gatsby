@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
-import Container from '../components/container';
-import Navbar from '../components/Navbar/Navbar';
-import Appnav from '../components/Navbar/AppNav';
-import '../assets/main.css';
-import Image from '../components/Image';
+import React, { Component } from "react";
+import { Link } from "gatsby";
+
+import HeroNav from "../components/Navbar/HeroNav";
+import Container from "../components/container";
+import "../assets/main.css";
+import Image from "../components/Image";
 
 export class Success extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <HeroNav />
         <Container>
           <main>
             <div style={{ margin: `0 auto` }}>
@@ -43,7 +43,6 @@ export class Success extends Component {
             </Link>
           </main>
         </Container>
-        <Appnav />
       </div>
     );
   }

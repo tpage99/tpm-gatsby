@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 
+import HeroNav from "../components/Navbar/HeroNav";
 import Container from "../components/container";
-import Appnav from "../components/Navbar/AppNav";
 import SiteMetadata from "../components/Site-Metadata";
 import "../assets/main.css";
 import LandingImage from "../components/landingImage";
@@ -12,6 +12,7 @@ export default class index extends Component {
     return (
       <div style={{ height: `100%` }}>
         <SiteMetadata pathname={this.props.location.pathname} />
+        <HeroNav />
         <main>
           <Container>
             <div style={{ maxWidth: `90%`, margin: `auto` }}>
@@ -89,7 +90,6 @@ export default class index extends Component {
             </section>
           </Container>
         </main>
-        <Appnav />
       </div>
     );
   }

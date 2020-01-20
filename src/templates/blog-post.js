@@ -2,9 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-import Navbar from "../components/Navbar/Navbar";
-import HomeIcon from "../components/HomeIcon/HomeIcon";
-import Appnav from "../components/Navbar/AppNav";
+import HeroNav from "../components/Navbar/HeroNav";
 import BlogContainer from "../components/BlogContainer/BlogContainer";
 import Footer from "../components/footer";
 
@@ -45,8 +43,7 @@ export default function Template({ data }) {
 
         <meta name="google-site-verification" content="1R4rFQpnixwUVi2dmzSl37vwdeyFFoC69PRMC5H5edY" />
       </Helmet>
-      <Navbar />
-      <HomeIcon />
+      <HeroNav />
       <main>
         <BlogContainer>
           <h1>
@@ -56,7 +53,6 @@ export default function Template({ data }) {
         </BlogContainer>
       </main>
       <Footer />
-      <Appnav />
     </div>
   );
 }

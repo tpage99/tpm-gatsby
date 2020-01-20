@@ -1,9 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
-import Navbar from "../components/Navbar/Navbar";
-import HomeIcon from "../components/HomeIcon/HomeIcon";
-import Appnav from "../components/Navbar/AppNav";
+
+import HeroNav from "../components/Navbar/HeroNav";
 import Container from "../components/container";
 
 import "../assets/main.css";
@@ -23,8 +22,7 @@ export default function BlogPage({ data }) {
         <meta name="docsearch:version" content="2.0" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover" />
       </Helmet>
-      <Navbar />
-      <HomeIcon />
+      <HeroNav />
       <main>
         <Container>
           <h1 style={{ textAlign: `center` }}>just some stuff we wrote.</h1>
@@ -64,7 +62,6 @@ export default function BlogPage({ data }) {
           </section>
         </Container>
       </main>
-      <Appnav />
     </div>
   );
 }
