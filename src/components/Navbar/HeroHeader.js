@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 
 import "./Navbar.css";
-import MenuButton from "./menuButton";
+import MenuButton from "./MenuButton";
 import Backdrop from "./Backdrop";
 import SideDrawer from "./SideDrawer";
 
