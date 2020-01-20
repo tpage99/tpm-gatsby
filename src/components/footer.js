@@ -113,7 +113,7 @@ export default class footer extends Component {
           <a href="https://gatsbyjs.org/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
             GatsbyJS
           </a>{" "}
-          and hosted on{" "}
+          🚀 and hosted on{" "}
           <a href="https://www.netlify.com/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
             Netlify
           </a>

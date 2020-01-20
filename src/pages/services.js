@@ -21,7 +21,7 @@ export default class services extends Component {
           <Container>
             <section style={{ textAlign: `center` }}>
               <h1 style={{ paddingTop: `2rem` }}>some of the stuff we do.</h1>
-              <p style={{ padding: `0 2rem`, fontSize: `2rem`, lineHeight: `1.75rem` }}>
+              <p style={{ padding: `0 3rem`, fontSize: `2rem`, lineHeight: `1.75rem` }}>
                 Ignoring your businesses' online strategy means leaving money on the table and customers in the dark.
                 Check out some of the tools we provide to give your business the online advantage it needs to excel.
               </p>
@@ -61,7 +61,7 @@ export default class services extends Component {
                   <div style={{ margin: `auto`, paddingTop: `1rem` }}>
                     <Video
                       videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488259/web%20assets/Websites.mp4"
-                      videoTitle="mouse interacting with computer"
+                      videoTitle="animated mouse interacting with computer"
                     />
                   </div>
                   <p style={{ paddingTop: `2rem` }}>
@@ -92,7 +92,7 @@ export default class services extends Component {
                 <div style={{ margin: `auto`, paddingTop: `1rem` }}>
                   <Video
                     videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488267/web%20assets/Social_Media.mp4"
-                    videoTitle="mouse interacting with computer"
+                    videoTitle="animated people standing around screen with a thumbsup icon in motion"
                   />
                 </div>
                 <p style={{ paddingTop: `2rem` }}>
@@ -121,7 +121,7 @@ export default class services extends Component {
                 <div style={{ margin: `auto`, paddingTop: `1rem` }}>
                   <Video
                     videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488270/web%20assets/Ecommerce.mp4"
-                    videoTitle="mouse interacting with computer"
+                    videoTitle="animated transitions on a computer screen"
                   />
                 </div>
                 <p style={{ paddingTop: `2rem` }}>
@@ -151,7 +151,7 @@ export default class services extends Component {
                 <div style={{ margin: `auto`, paddingTop: `1rem` }}>
                   <Video
                     videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488263/web%20assets/Review_of_Current_Set_up.mp4"
-                    videoTitle="mouse interacting with computer"
+                    videoTitle="animated computer screen with mouse clicking on video to play a presentation"
                   />
                 </div>
                 <p style={{ paddingTop: `2rem` }}>
@@ -181,7 +181,7 @@ export default class services extends Component {
                 <div style={{ margin: `auto`, paddingTop: `1rem` }}>
                   <Video
                     videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488273/web%20assets/Crash_Course_Trainings.mp4"
-                    videoTitle="mouse interacting with computer"
+                    videoTitle="animated people standing around a person sized phone interacting with the screen as chat bubbles continue enter the screen"
                   />
                 </div>
                 <p style={{ paddingTop: `2rem` }}>
@@ -211,7 +211,7 @@ export default class services extends Component {
                 <div style={{ margin: `auto`, paddingTop: `1rem` }}>
                   <Video
                     videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488276/web%20assets/Consultation.mp4"
-                    videoTitle="mouse interacting with computer"
+                    videoTitle="animated people standing around and on top of a bar graph and rolling a pie chart"
                   />
                 </div>
                 <p style={{ paddingTop: `2rem` }}>

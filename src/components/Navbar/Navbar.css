@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   background: #2980b9;
-  height: 56px;
+  height: 5.5rem;
 }
 
 .app-nav {
@@ -32,7 +32,7 @@
 .navbar_logo a {
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .spacer {
@@ -53,7 +53,7 @@
 .navbar a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1.5rem;
   text-decoration: none;
 }
 
@@ -67,6 +67,7 @@
 .navbar_navigation-items a {
   color: white;
   text-decoration: none;
+  font-size: 1.75rem;
 }
 
 .navbar_navigation-items a:hover,
