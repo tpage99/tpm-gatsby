@@ -46,9 +46,7 @@ export default function Template({ data }) {
       <HeroNav />
       <main>
         <BlogContainer>
-          <h1>
-            <span className="emHeader">{post.frontmatter.title}</span>
-          </h1>
+          <h1 className="post-header">{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} className="blog" style={{ paddingBottom: `3rem` }} />
         </BlogContainer>
       </main>

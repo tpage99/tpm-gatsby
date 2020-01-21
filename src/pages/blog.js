@@ -27,14 +27,9 @@ export default function BlogPage({ data }) {
         <Container>
           <h1 style={{ textAlign: `center` }}>just some stuff we wrote.</h1>
           <section style={{ margin: `auto` }}>
-            <div
-              style={{
-                display: `grid`,
-                gridTemplateColumns: `1fr 1fr 1fr 1fr`
-              }}
-            >
+            <div className="blog-grid">
               {data.allMarkdownRemark.edges.map(post => (
-                <article className="blog-card" style={{ gridColumn: `span 2` }} key={post.node.id}>
+                <article className="blog-card" key={post.node.id}>
                   <h3 className="emHeader" style={{ marginBottom: `0` }}>
                     {post.node.frontmatter.title}
                   </h3>
