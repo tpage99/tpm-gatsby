@@ -368,6 +368,7 @@ form button {
     font-size: 2rem;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.45) 2px 5px 5px;
+    line-height: 2rem;
   }
 
   .blog-card {

@@ -18,7 +18,7 @@ export default class about extends Component {
               <div className="img-grid">
                 <div className="img-fluid" style={{ marginBottom: `0` }}>
                   <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1579575965/web%20assets/taylor_profile.png"
                     alt="taylor, web developer"
                     className="feature-img"
                     style={{ marginBottom: `0` }}
@@ -27,7 +27,7 @@ export default class about extends Component {
                 </div>
                 <div className="img-fluid" style={{ marginBottom: `0` }}>
                   <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1579543942/web%20assets/kendra_profile.png"
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1579575961/web%20assets/kendra_profile.png"
                     alt="kendra, marketing consultant"
                     className="feature-img"
                     style={{ marginBottom: `0` }}
