@@ -31,6 +31,15 @@ h4 {
   font-size: 2rem;
 }
 
+hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-top: 1px solid gray;
+  margin: 3rem 0 0;
+}
+
 .emHeader {
   background-color: #cc5529;
   color: #ecf0f1;
@@ -50,7 +59,7 @@ h4 {
 
 .feature-card {
   background-color: #cc5529;
-  padding: 0 2rem 0.5rem;
+  padding: 0.5rem 2rem 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.45) 2px 5px 5px;
   max-width: 75%;
   margin: auto;
@@ -69,7 +78,7 @@ h4 {
 }
 
 .hero-text {
-  padding: 3rem;
+  padding: 1rem 3rem;
   font-size: 3rem;
   line-height: 2.75rem;
 }
@@ -96,10 +105,36 @@ h4 {
   text-shadow: rgba(0, 0, 0, 0.67) 5px 5px 8px;
 }
 
-.servCard {
+.img-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-grid .img-fluid img {
+  width: 450px;
+  max-width: 100%;
+  max-height: 550px;
+}
+
+.img-grid .img-fluid {
+  padding: 1rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  padding: 2rem;
+  line-height: 1.5rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+.serv-card {
   grid-column: span 2;
   text-align: center;
-  vertical-align: center;
   padding: 2rem;
   background-color: #ecf0f1;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px;
@@ -111,8 +146,14 @@ h4 {
   display: flex;
 }
 
-.vidCard p {
-  padding: 0 4rem 3rem;
+.vid-info {
+  padding-bottom: 2rem;
+}
+
+.vid-info p {
+  margin: 0;
+  vertical-align: top;
+  padding: 0 2rem 5rem;
   font-size: 1.5rem;
 }
 
@@ -191,6 +232,28 @@ form button {
   border: 0;
 }
 
+.about-info {
+  margin: 2rem;
+  line-height: 2rem;
+}
+
+.about-info h2 {
+  text-align: center;
+  padding: 1rem 2rem 2rem;
+}
+
+.about-info p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.highlight-blue {
+  background-color: #2980b9;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 2px 5px 5px;
+  color: white;
+}
+
 .legal h1 {
   text-align: center;
 }
@@ -253,10 +316,41 @@ form button {
   padding: 1rem 0 2rem;
 }
 
+.mobile-header {
+  display: none;
+}
+
+.head-room {
+  padding-top: 2rem;
+}
+
 @media (max-width: 899px) {
   h1 {
     font-size: 4rem;
     line-height: 4rem;
+  }
+
+  .about-info h2 {
+    margin: auto;
+    line-height: 2.5rem;
+  }
+
+  .about-info .mobile-header {
+    display: block;
+    background-color: #2980b9;
+    padding: 0.5rem;
+    color: #ecf0f1;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.45) 2px 5px 5px;
+  }
+
+  .highlight-blue {
+    display: none;
+  }
+
+  .head-room {
+    padding-top: 0;
   }
 
   .feature-card {
@@ -296,6 +390,16 @@ form button {
     text-shadow: rgba(0, 0, 0, 0.67) 5px 5px 8px;
   }
 
+  .img-grid {
+    display: block;
+    margin: auto;
+    align-content: center;
+  }
+
+  .emHeader {
+    line-height: 2.2rem;
+  }
+
   .footer-hero {
     font-size: 2.25rem;
     padding: 0 0 2rem;
@@ -327,6 +431,35 @@ form button {
     font-size: 1rem;
     margin-top: 0;
     padding: 1rem 0 5rem;
+  }
+
+  .services {
+    display: block;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .serv-card {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #ecf0f1;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px;
+  }
+
+  .vidCard,
+  .vid-info {
+    display: block;
+    padding: 2rem 0;
+  }
+
+  .vidCard {
+    max-width: 100%;
+  }
+
+  .vid-info p {
+    margin: 0;
+    padding: 0 0 5rem;
   }
 }
 

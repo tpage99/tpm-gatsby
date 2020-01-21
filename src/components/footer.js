@@ -5,24 +5,18 @@ export default class footer extends Component {
   render() {
     return (
       <footer>
-        <hr
-          style={{
-            display: `block`,
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            border: `0`,
-            borderTop: `1px solid gray`,
-            margin: `3rem 0 0`
-          }}
-        />
+        <hr />
         <section style={{ textAlign: `center`, margin: `2rem 0rem 4rem`, alignContent: `center` }}>
           <h3 style={{ fontSize: `4rem`, lineHeight: `2rem`, fontWeight: `bold`, paddingTop: `2rem` }}>let's meet.</h3>
           <p style={{ padding: `0 1.5rem`, fontSize: `1.75rem`, lineHeight: `2rem` }}>
             Website design and development, social media strategy and implementation, and small business headache
-            resolutions are all strategized and built right here in the local Springfield area. If you'd like to meet to
-            go over your business pain-points and talk about some potential ways to fix them, we'd love to meet. Even if
-            just for coffee and consultation, we are enthusiastic about helping local businesses solve problems. Give us
-            a call or send us a message. Consultations are free and no obligation.
+            resolutions are all strategized and built right here in the local Springfield area.
+          </p>
+          <p style={{ padding: `0 1.5rem`, fontSize: `1.75rem`, lineHeight: `2rem` }}>
+            {" "}
+            If you'd like to meet to go over your business pain-points and talk about some potential ways to fix them,
+            we'd love to meet. Even if just for coffee and consultation, we are enthusiastic about helping local
+            businesses solve problems. Give us a call or send us a message. Consultations are free and no obligation.
           </p>
           <p className="footer-hero">We would love to be a part of the next big thing you're working on.</p>
           <Link

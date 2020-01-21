@@ -14,26 +14,29 @@ export default class about extends Component {
         <main>
           <Container>
             <h1 style={{ textAlign: `center`, paddingTop: `2rem` }}>meet your neighbors.</h1>
-            <div style={{ display: `flex`, justifyContent: `space-evenly` }}>
-              <div className="img-fluid" style={{ marginBottom: `0` }}>
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
-                  alt="taylor, web developer"
-                  className="feature-img"
-                  style={{ marginBottom: `0` }}
-                />
-                <p style={{ marginTop: `0`, paddingTop: `0`, textAlign: `center` }}>Taylor, web developer</p>
-              </div>
-              <div className="img-fluid" style={{ marginBottom: `0` }}>
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1579543942/web%20assets/kendra_profile.png"
-                  alt="kendra, marketing consultant"
-                  className="feature-img"
-                  style={{ marginBottom: `0` }}
-                />
-                <p style={{ marginTop: `0`, paddingTop: `0`, textAlign: `center` }}>Kendra, marketing consultant</p>
+            <div style={{ margin: `auto` }}>
+              <div className="img-grid">
+                <div className="img-fluid" style={{ marginBottom: `0` }}>
+                  <img
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1546835049/web%20assets/taylor_website_final.jpg"
+                    alt="taylor, web developer"
+                    className="feature-img"
+                    style={{ marginBottom: `0` }}
+                  />
+                  <p style={{ marginTop: `0`, paddingTop: `0`, textAlign: `center` }}>Taylor, web developer</p>
+                </div>
+                <div className="img-fluid" style={{ marginBottom: `0` }}>
+                  <img
+                    src="https://res.cloudinary.com/tpage99/image/upload/v1579543942/web%20assets/kendra_profile.png"
+                    alt="kendra, marketing consultant"
+                    className="feature-img"
+                    style={{ marginBottom: `0` }}
+                  />
+                  <p style={{ marginTop: `0`, paddingTop: `0`, textAlign: `center` }}>Kendra, marketing consultant</p>
+                </div>
               </div>
             </div>
+
             <section style={{ textAlign: `center` }}>
               <p className="hero-text">
                 We're Taylor and Kendra Page. A husband and wife team that love to spend time working on projects
@@ -48,65 +51,36 @@ export default class about extends Component {
                 </p>
               </div>
             </section>
-            <hr
-              style={{
-                display: `block`,
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                border: `0`,
-                borderTop: `1px solid gray`,
-                margin: `3rem 0 0`
-              }}
-            />
-            <section style={{ margin: `2rem`, lineHeight: `2rem` }}>
-              <h2 style={{ textAlign: `center`, padding: `1rem 2rem 2rem` }}>why you should work with us.</h2>
+            <hr />
+            <section className="about-info">
+              <h2>why you should work with us.</h2>
               <h3>
-                <span
-                  style={{
-                    backgroundColor: `#2980B9`,
-                    padding: `0.5rem`,
-                    boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
-                    color: `white`
-                  }}
-                >
+                <span className="highlight-blue">
                   We're not your typical <em>tech</em> people.
                 </span>
               </h3>
-              <p style={{ fontSize: `1.5rem`, lineHeight: `1.5rem` }}>
+              <h3 className="mobile-header">
+                We're not your typical <em>tech</em> people.
+              </h3>
+              <p>
                 We won't talk to you about Javascript frameworks or [insert random tech term here] and expect you to
                 care or understand anything about it. We went to school to learn how to talk, and more importantly, how
                 to <em>listen</em> to people.
               </p>
-              <h3 style={{ paddingTop: `2rem` }}>
-                <span
-                  style={{
-                    backgroundColor: `#2980B9`,
-                    padding: `0.5rem`,
-                    boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
-                    color: `white`
-                  }}
-                >
-                  You need to be online.
-                </span>
+              <h3 className="head-room">
+                <span className="highlight-blue">You need to be online.</span>
               </h3>
-              <p style={{ fontSize: `1.5rem`, lineHeight: `1.5rem` }}>
+              <h3 className="mobile-header">You need to be online.</h3>
+              <p>
                 Maybe you've been doing ok with what you've got or without a website until now but the truth is you're
                 missing out on customers without some sort of digital storefront. This gives customers an opportunity to
                 learn more about you at their own pace.
               </p>
-              <h3 style={{ paddingTop: `2rem` }}>
-                <span
-                  style={{
-                    backgroundColor: `#2980B9`,
-                    padding: `0.5rem`,
-                    boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
-                    color: `white`
-                  }}
-                >
-                  We actually like this stuff.
-                </span>
+              <h3 className="head-room">
+                <span className="highlight-blue">We actually like this stuff.</span>
               </h3>
-              <p style={{ fontSize: `1.5rem`, lineHeight: `1.5rem` }}>
+              <h3 className="mobile-header">We actually like this stuff.</h3>
+              <p>
                 The more time you spend working on your online presence yourself, is time away from doing the thing you
                 love - your business. Let us help. We love technology and leveraging it to help businesses become more
                 efficient and profitable.
@@ -119,20 +93,10 @@ export default class about extends Component {
                 marginTop: `3rem`
               }}
             >
-              <p
-                style={{
-                  padding: `1.5rem 3rem`,
-                  fontSize: `2rem`,
-                  backgroundColor: `#CC5529`,
-                  boxShadow: `rgba(0, 0, 0, 0.45) 2px 5px 5px`,
-                  margin: `auto`,
-                  color: `white`,
-                  maxWidth: `60%`
-                }}
-              >
-                We've got plenty more reasons why you should work with us, but maybe that's best over a coffee.
-              </p>
-              <p style={{ padding: `2rem 3rem 0`, fontSize: `2rem` }}>
+              <div className="feature-card">
+                <p>We've got plenty more reasons why you should work with us, but maybe that's best over a coffee.</p>
+              </div>
+              <p className="hero-text">
                 Whether it's a solution for your social media presence or getting a website up and running, we can help
                 you become more connected with your customers.
               </p>
