@@ -411,6 +411,18 @@ form button {
     line-height: 2rem;
   }
 
+  .legal h1 {
+    font-size: 3.5rem;
+  }
+
+  .legal p {
+    word-wrap: break-word;
+  }
+
+  .legal li {
+    word-wrap: break-word;
+  }
+
   .pic-card {
     grid-column: span 4;
     text-align: center;

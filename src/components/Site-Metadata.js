@@ -16,6 +16,11 @@ const SiteMetadata = ({ pathname }) => (
             twitter
           }
         }
+        allSitePage {
+          nodes {
+            path
+          }
+        }
       }
     `}
     render={({

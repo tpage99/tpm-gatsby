@@ -11,11 +11,12 @@ import "../assets/main.css";
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   // above is same as using const post = data.markdownRemark;
+  const { site: domain } = data;
   return (
     <div>
       <Helmet>
         <html lang="en" />
-        <link rel="canonical" href={post.frontmatter.path} />
+        <link rel="canonical" href={`${domain.siteMetadata.siteUrl}${post.frontmatter.path}`} />
         <meta name="docsearch:version" content="2.0" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover" />
         <meta name="description" content={post.frontmatter.description} />
@@ -63,6 +64,11 @@ export const postQuery = graphql`
         path
         title
         description
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
