@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import Container from '../components/container';
-import Navbar from '../components/Navbar/Navbar';
-import Appnav from '../components/Navbar/AppNav';
-import { Link } from 'gatsby';
-import '../assets/main.css';
+import React, { Component } from "react";
+
+import { Link } from "gatsby";
+import Container from "../components/container";
+import HeroNav from "../components/Navbar/HeroNav";
+import "../assets/main.css";
 
 export class errorPage extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <HeroNav />
         <Container>
           <main>
             <h1>The page you're looking for isn't here.</h1>
@@ -18,7 +18,6 @@ export class errorPage extends Component {
             </Link>
           </main>
         </Container>
-        <Appnav />
       </div>
     );
   }

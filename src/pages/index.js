@@ -1,123 +1,95 @@
-import React, { Component } from 'react';
-import Container from '../components/container';
-import Navbar from '../components/Navbar/Navbar';
-import Appnav from '../components/Navbar/AppNav';
-import { Link } from 'gatsby';
-import SiteMetadata from '../components/Site-Metadata';
-import '../assets/main.css';
+import React, { Component } from "react";
+import { Link } from "gatsby";
+
+import HeroNav from "../components/Navbar/HeroNav";
+import Container from "../components/container";
+import SiteMetadata from "../components/Site-Metadata";
+import "../assets/main.css";
+import LandingImage from "../components/landingImage";
 
 export default class index extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
         <SiteMetadata pathname={this.props.location.pathname} />
-        <Navbar />
-        <main className="home">
+        <HeroNav />
+        <main>
           <Container>
-            <div>
-              <div className="grid">
-                <div className="text-block">
-                  <h1>
-                    <span>hi! we're the pages.</span>
-                  </h1>
-                  <p>
-                    We're a married couple living in the Springfield area that
-                    enjoys helping companies we love become more accessible to
-                    others. <br />
-                    <br />
-                    We provide social media and web based solutions that help
-                    put local businesses within easy reach of people in the
-                    Springfield area, even if they don't know you yet.
-                  </p>
-                </div>
-                <div className="img-fluid">
-                  <img
-                    src="https://res.cloudinary.com/tpage99/image/upload/v1550802820/web%20assets/website_1-2.jpg"
-                    alt="kendra and taylor"
-                    className="feature-img"
-                  />
-                </div>
-              </div>
+            <div style={{ maxWidth: `90%`, margin: `auto` }}>
+              <LandingImage />
             </div>
-          </Container>
-          <div>
-            <h1 className="divider">check out some of the stuff we do.</h1>
-          </div>
-          <Container>
-            <div className="grid">
-              <div className="img-fluid">
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546752856/web%20assets/KLSiteSkewedShadow.png"
-                  alt="kevin lane's catering website snapshot"
-                />
-              </div>
-              <div className="text-front">
-                <h2>websites.</h2>
+            <section style={{ textAlign: `center`, margin: `2rem 0rem` }}>
+              <p className="hero-text">
+                We offer <span style={{ fontStyle: `italic`, fontWeight: `bold` }}>digital solutions</span> for
+                businesses to solve their biggest problems - meeting their customers where they are. We leverage
+                software and technology to help you cut costs while increasing your exposure.
+              </p>
+              <div className="feature-card">
+                <h2>dig·i·tal so·lu·tions</h2>
+                <p style={{ marginTop: `0`, fontStyle: `italic`, fontSize: `2rem` }}>/ˈdijidl/ /səˈlo͞oSH(ə)nz/</p>
                 <p>
-                  Websites are your digital storefront and a great way to make a
-                  first impression with potential customers. We specialize in
-                  static websites for local businesses. Low overhead, secure
-                  websites that load very quickly.
-                </p>
-                <p>
-                  Learn more about how we can help{' '}
-                  <Link to="/services" className="simple-link">
-                    design and develop your next website.
-                  </Link>
+                  Virtual or electronic products or software that help solve real world problems in a consistent,
+                  economic, and reliable manner. Websites, social media, content strategy, search engine optimization
+                  (SEO), business software as a service, and progressive web apps are all examples of digital solutions.
                 </p>
               </div>
-            </div>
-            <div className="grid">
-              <div className="img-fluid">
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546752861/web%20assets/photo_layers_3.png"
-                  alt="examples of created content/media"
-                />
+            </section>
+            <section className="grid-sec">
+              <div
+                className="pic-card"
+                style={{
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377634/web%20assets/jordanvalleyoverlay.png)`,
+                  backgroundPosition: `center center`,
+                  backgroundRepeat: `no-repeat`,
+                  backgroundSize: `100% 100%`
+                }}
+              >
+                <Link to="/services" className="pic-header">
+                  SERVICES
+                </Link>
               </div>
-              <div className="start-text">
-                <h2>content creation.</h2>
-                <p className="text-block">
-                  Do you need to communicate some boring or routine information
-                  but want to do it in a way that is appealing and encourages
-                  interaction with customers? Because we do the whole pictures
-                  and text thing to make your potluck at least look like it's
-                  going to be really cool.
-                </p>
-                <p>
-                  Discover how we can help with{' '}
-                  <Link to="/services" className="simple-link">
-                    content design and creation for your next event.
-                  </Link>
-                </p>
+              <div
+                className="pic-card"
+                style={{
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377645/web%20assets/gilliozoverlay.png)`,
+                  backgroundPosition: `center center`,
+                  backgroundRepeat: `no-repeat`,
+                  backgroundSize: `100% 100%`
+                }}
+              >
+                <Link to="/about" className="pic-header">
+                  ABOUT
+                </Link>
               </div>
-            </div>
-            <div className="grid">
-              <div className="img-fluid">
-                <img
-                  src="https://res.cloudinary.com/tpage99/image/upload/v1546752858/web%20assets/FBSiteSkewedShadow.png"
-                  alt="cash saver 417 facebook page"
-                />
+              <div
+                className="pic-card"
+                style={{
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377650/web%20assets/downtownoverlay.png)`,
+                  backgroundPosition: `center center`,
+                  backgroundRepeat: `no-repeat`,
+                  backgroundSize: `100% 100%`
+                }}
+              >
+                <Link to="/blog" className="pic-header">
+                  BLOG
+                </Link>
               </div>
-              <div className="text-front">
-                <h2>social media.</h2>
-                <p>
-                  We can help you set up and establish a social media presence.
-                  It's not just about having a personal Facebook page but rather
-                  having a specially crafted strategy that's geared towards
-                  engagement.
-                </p>
-                <p>
-                  Read on about how we can help{' '}
-                  <Link to="/services" className="simple-link">
-                    strategize and implement a social media solution for your
-                    business.
-                  </Link>
-                </p>
+              <div
+                className="pic-card"
+                style={{
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377654/web%20assets/conventionoverlay.png)`,
+                  backgroundPosition: `center center`,
+                  backgroundRepeat: `no-repeat`,
+                  backgroundSize: `100% 100%`
+                }}
+              >
+                <Link to="/contact" className="pic-header">
+                  CONTACT
+                </Link>
               </div>
-            </div>
+            </section>
           </Container>
         </main>
-        <Appnav />
       </div>
     );
   }

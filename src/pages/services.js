@@ -1,134 +1,150 @@
-import React, { Component } from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import HomeIcon from '../components/HomeIcon/HomeIcon';
-import Appnav from '../components/Navbar/AppNav';
-import Container from '../components/container';
-import SiteMetadata from '../components/Site-Metadata';
-import '../assets/main.css';
+import React, { Component } from "react";
+import { Link } from "gatsby";
+
+import HeroNav from "../components/Navbar/HeroNav";
+import Container from "../components/container";
+import SiteMetadata from "../components/Site-Metadata";
+import "../assets/main.css";
+
+import Video from "../components/video";
 
 export default class services extends Component {
   render() {
     return (
       <div style={{ height: `100%` }}>
         <SiteMetadata pathname={this.props.location.pathname} />
-        <Navbar />
-        <HomeIcon />
+        <HeroNav />
         <main>
           <Container>
-            <h1 style={{ textAlign: `center` }}>some of the stuff we do.</h1>
-            <div className="row">
-              <div className="">
-                <div className="card grow">
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <strong>WEBSITES</strong>
-                    </h3>
-                    <p className="card-text">
-                      Your customers want to meet you online first. Make sure
-                      you're there to say hello and answer questions they have
-                      about your business.
+            <section style={{ textAlign: `center` }}>
+              <h1 style={{ paddingTop: `2rem` }}>some of the stuff we do.</h1>
+              <p className="hero-text">
+                Ignoring your businesses' online strategy means leaving money on the table and customers in the dark.
+                Check out some of the tools we provide to give your business the online advantage it needs to excel.
+              </p>
+            </section>
+            <section className="services">
+              <div className="serv-card">
+                <div className="emHeader">
+                  <h3>Websites</h3>
+                </div>
+                <div className="vidCard">
+                  <Video
+                    videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488259/web%20assets/Websites.mp4"
+                    videoTitle="animated mouse interacting with computer"
+                  />
+                  <div className="vid-info">
+                    <p>
+                      Your customers want to meet you online first. Make sure you're there to say hello and answer
+                      questions they have about your business.
                     </p>
-                    <p className="card-text">
-                      <i>Packages starting at $500.</i>
-                    </p>
+                    <Link to="/services/websites" className="emLink">
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6 mx-auto">
-                <div className="card text-dark bg-light grow">
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <strong>SOCIAL MEDIA</strong>
-                    </h3>
-                    <p className="card-text">
-                      Even grandma uses Facebook now. Become more accessible to
-                      your customers.
-                    </p>
-                    <p className="card-text">
-                      <i>Packages starting at $500.</i>
-                    </p>
+              <div className="serv-card">
+                <div className="emHeader">
+                  <h3>Social Media</h3>
+                </div>
+                <div className="vidCard">
+                  <Video
+                    videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488267/web%20assets/Social_Media.mp4"
+                    videoTitle="animated people standing around screen with a thumbsup icon in motion"
+                  />
+                  <div className="vid-info">
+                    <p>Even grandma uses Facebook now. Become more accessible to your customers.</p>
+                    <Link to="/services/social-media" className="emLink">
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6 mx-auto">
-                <div className="card text-dark bg-light grow">
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <strong>GRAPHIC DESIGN</strong>
-                    </h3>
-                    <p className="card-text">
-                      Sometimes you just need some cool stuff with pictures and
-                      text. We can do that.
+              <div className="serv-card">
+                <div className="emHeader">
+                  <h3>eCommerce</h3>
+                </div>
+                <div className="vidCard">
+                  <Video
+                    videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488270/web%20assets/Ecommerce.mp4"
+                    videoTitle="animated transitions on a computer screen"
+                  />
+                  <div className="vid-info">
+                    <p>
+                      Everyone can see the merit of being able to buy stuff without putting on pants. If you've tied
+                      yourself down to only selling your products in your physical store, boy have we got some news for
+                      you.
                     </p>
-                    <p className="card-text">
-                      <i>Packages starting at $30.</i>
-                    </p>
+                    <Link to="/services/ecommerce" className="emLink">
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6 mx-auto">
-                <div className="card text-dark bg-light grow">
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <strong>REVIEW OF CURRENT SETUP</strong>
-                    </h3>
-                    <p className="card-text">
-                      Your customers are either already using your online info
-                      or they're looking for it. We'll take a look at what ya
-                      got and let ya know what we think.
+              <div className="serv-card">
+                <div className="emHeader">
+                  <h3>Review of Current Setup</h3>
+                </div>
+                <div className="vidCard">
+                  <Video
+                    videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488263/web%20assets/Review_of_Current_Set_up.mp4"
+                    videoTitle="animated computer screen with mouse clicking on video to play a presentation"
+                  />
+                  <div className="vid-info">
+                    <p>
+                      Your customers are either already using your online info or they're looking for it. We'll take a
+                      look at what ya got and let ya know what we think.
                     </p>
-                    <p className="card-text">
-                      <i>Packages starting at $100.</i>
-                    </p>
+                    <Link to="/services/review-of-current-setup" className="emLink">
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6 mx-auto">
-                <div className="card text-dark bg-light grow">
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <strong>CRASH COURSE TRAININGS</strong>
-                    </h3>
-                    <p className="card-text">
-                      You're pretty confident in your abilities but need some
-                      help with tools and knowledge to get started. We got you.
+              <div className="serv-card">
+                <div className="emHeader">
+                  <h3>Crash Course Trainings</h3>
+                </div>
+                <div className="vidCard">
+                  <Video
+                    videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488273/web%20assets/Crash_Course_Trainings.mp4"
+                    videoTitle="animated people standing around a person sized phone interacting with the screen as chat bubbles continue enter the screen"
+                  />
+                  <div className="vid-info">
+                    <p>
+                      You're pretty confident in your abilities but need some help with tools and knowledge to get
+                      started. We got you.
                     </p>
-                    <p className="card-text">
-                      <i>Packages starting at $100.</i>
-                    </p>
+                    <Link to="/services/crash-course-trainings" className="emLink">
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-6 mx-auto">
-                <div className="card text-dark bg-light grow">
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <strong>CONSULTATIONS</strong>
-                    </h3>
-                    <p className="card-text">
-                      Sometimes you don't even know what you need. Get started
-                      on where to start.
-                    </p>
-                    <p className="card-text">
+              <div className="serv-card">
+                <div className="emHeader">
+                  <h3>Consultation</h3>
+                </div>
+                <div className="vidCard">
+                  <Video
+                    videoSrcURL="https://res.cloudinary.com/tpage99/video/upload/v1579488276/web%20assets/Consultation.mp4"
+                    videoTitle="animated people standing around and on top of a bar graph and rolling a pie chart"
+                  />
+                  <div className="vid-info">
+                    <p>
+                      Sometimes you don't even know what you need. Get started on where to start.{" "}
                       <i>Consultation for services are free.</i>
                     </p>
+                    <Link to="/services/consultation" className="emLink">
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </Container>
         </main>
-        <Appnav />
       </div>
     );
   }

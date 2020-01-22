@@ -1,7 +1,7 @@
 const path = require(`path`);
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 
-if (process.env.ENVIRONMENT !== 'production') {
+if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
 }
 
@@ -12,34 +12,37 @@ module.exports = {
     title: `The Pages Media`,
     siteUrl: `https://www.thepagesmedia.com`,
     description: `Web development, design, and social media solutions for local small businesses in the Springfield, MO area.`,
-    twitter: `@taylorpage99`,
+    twitter: `@taylorpage99`
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
+        path: path.join(__dirname, `src`, `images`)
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
+        typekit: {
+          id: "lcd5bez"
+        }
+      }
     },
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages/blog`,
-        name: 'blog'
-      },
+        name: "blog"
+      }
     },
-    'gatsby-transformer-remark',
+    "gatsby-transformer-remark",
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -52,16 +55,16 @@ module.exports = {
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
-        include_favicon: true, // Include favicon
-      },
+        include_favicon: true // Include favicon
+      }
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-125486955-1',
-        head: false,
-      },
-    },
-  ],
+        trackingId: "UA-125486955-1",
+        head: false
+      }
+    }
+  ]
 };

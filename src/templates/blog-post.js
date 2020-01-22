@@ -1,20 +1,22 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import Navbar from "../components/Navbar/Navbar";
-import HomeIcon from "../components/HomeIcon/HomeIcon";
-import Appnav from "../components/Navbar/AppNav";
+
+import HeroNav from "../components/Navbar/HeroNav";
 import BlogContainer from "../components/BlogContainer/BlogContainer";
-import '../assets/main.css';
+import Footer from "../components/footer";
+
+import "../assets/main.css";
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   // above is same as using const post = data.markdownRemark;
+  const { site: domain } = data;
   return (
     <div>
       <Helmet>
         <html lang="en" />
-        <link rel="canonical" href={post.frontmatter.path} />
+        <link rel="canonical" href={`${domain.siteMetadata.siteUrl}${post.frontmatter.path}`} />
         <meta name="docsearch:version" content="2.0" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover" />
         <meta name="description" content={post.frontmatter.description} />
@@ -42,15 +44,14 @@ export default function Template({ data }) {
 
         <meta name="google-site-verification" content="1R4rFQpnixwUVi2dmzSl37vwdeyFFoC69PRMC5H5edY" />
       </Helmet>
-      <Navbar />
-      <HomeIcon />
+      <HeroNav />
       <main>
         <BlogContainer>
-          <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} className="simple-link blog-link" />
+          <h1 className="post-header">{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} className="blog" style={{ paddingBottom: `3rem` }} />
         </BlogContainer>
       </main>
-      <Appnav />
+      <Footer />
     </div>
   );
 }
@@ -63,6 +64,11 @@ export const postQuery = graphql`
         path
         title
         description
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

@@ -3,36 +3,43 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(75, 75, 75);
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536888003/grey_wash_wall.png');
+  background: #2980b9;
   height: 56px;
 }
 
-.app-nav {
+.app-menu {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  background: whitesmoke;
-  background-image: url('https://res.cloudinary.com/tpage99/image/upload/v1536464319/web%20assets/funky-lines.png');
-  height: 56px;
+  bottom: 1.2rem;
+  left: 28%;
+  width: 33%;
+  min-width: 10rem;
+  background: #2980b9;
+  height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
+  text-rendering: optimizeLegibility;
+  font-size: 1.75rem;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.48);
+  z-index: 10;
 }
 
 .navbar_navigation {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 0 4% 0 5%;
+  padding: 0 5%;
+  text-rendering: optimizeLegibility;
 }
 
 .navbar_logo {
   margin-left: 0;
   padding-left: 0;
+  display: flex;
   align-content: flex-start;
+  align-items: center;
 }
 
 .navbar_logo a {
-  color: whitesmoke;
+  color: #ecf0f1;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -49,13 +56,14 @@
 }
 
 .navbar_navigation-items li {
-  padding: 0.9rem 0.5rem 0 0.5rem;
+  padding: 0.5rem 0.2rem;
+  font-size: 1.5rem;
 }
 
 .navbar a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 16px;
   text-decoration: none;
 }
 
@@ -67,39 +75,28 @@
 }
 
 .navbar_navigation-items a {
-  color: whitesmoke;
+  color: #ecf0f1;
   text-decoration: none;
 }
 
 .navbar_navigation-items a:hover,
 .navbar_navigation-items a:active {
-  background-color: whitesmoke;
+  background-color: #ecf0f1;
   color: rgb(75, 75, 75);
 }
 
 @media all and (max-width: 410px) {
-  .app-nav > li {
-    flex: 1 1 auto;
-  }
-  .navbar {
+  .navbar_navigation-items ul li {
     display: none;
   }
-  .app-nav a {
-    display: block;
-    text-align: center;
-    padding: 14px 0;
-    text-decoration: none;
-    font-size-adjust: inherit;
-    color: rgb(75, 75, 75);
-  }
   .navbar_navigation-items a:active {
-    background-color: whitesmoke;
+    background-color: #ecf0f1;
     color: rgb(75, 75, 75);
   }
 }
 
-@media (max-width: 799px) {
-  .navbar {
+@media (max-width: 999px) {
+  .navbar_navigation-items ul li {
     display: none;
   }
   .navbar_navigation-items {
@@ -107,19 +104,16 @@
     flex-grow: 1;
     justify-content: space-around;
   }
-  .app-nav a {
-    color: rgb(75, 75, 75);
-  }
 }
 
-@media (min-width: 799px) {
+@media (min-width: 999px) {
   .navbar_toggle-button {
     display: none;
   }
   .toolbar_logo {
     margin: 0;
   }
-  .app-nav {
+  .app-menu {
     display: none;
   }
 }

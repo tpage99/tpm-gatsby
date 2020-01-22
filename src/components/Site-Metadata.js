@@ -1,8 +1,8 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { graphql, StaticQuery } from 'gatsby';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { graphql, StaticQuery } from "gatsby";
 
-import siteIcon from '../images/icon.png';
+import siteIcon from "../images/icon.png";
 
 const SiteMetadata = ({ pathname }) => (
   <StaticQuery
@@ -16,21 +16,23 @@ const SiteMetadata = ({ pathname }) => (
             twitter
           }
         }
+        allSitePage {
+          nodes {
+            path
+          }
+        }
       }
     `}
     render={({
       site: {
-        siteMetadata: { siteUrl, title, description, twitter },
-      },
+        siteMetadata: { siteUrl, title, description, twitter }
+      }
     }) => (
       <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
         <html lang="en" />
         <link rel="canonical" href={`${siteUrl}${pathname}`} />
         <meta name="docsearch:version" content="2.0" />
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
-        />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover" />
         <meta name="description" content={description} />
 
         <meta property="og:url" content={siteUrl} />
@@ -43,14 +45,9 @@ const SiteMetadata = ({ pathname }) => (
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content={twitter} />
-        <meta
-          name="google-site-verification"
-          content="IlJ-tmM2ujsqcna3kA7WgbmqUWnOjCsYXgOdf_9owZg"
-        />
-        <meta
-          name="google-site-verification"
-          content="1R4rFQpnixwUVi2dmzSl37vwdeyFFoC69PRMC5H5edY"
-        />
+        <meta name="google-site-verification" content="IlJ-tmM2ujsqcna3kA7WgbmqUWnOjCsYXgOdf_9owZg" />
+        <meta name="google-site-verification" content="1R4rFQpnixwUVi2dmzSl37vwdeyFFoC69PRMC5H5edY" />
+        <link rel="stylesheet" href="https://use.typekit.net/lcd5bez.css" />
       </Helmet>
     )}
   />
