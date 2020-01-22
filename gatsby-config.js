@@ -42,6 +42,7 @@ module.exports = {
       }
     },
     "gatsby-transformer-remark",
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
