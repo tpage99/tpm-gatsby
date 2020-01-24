@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 
+import GetYear from "./getCurrentYear";
+
 export default class footer extends Component {
   render() {
     return (
@@ -80,22 +82,33 @@ export default class footer extends Component {
                 <br />
                 Springfield, MO 65803
               </p>
-              <p>info@thepagesmedia.com</p>
-              <p>417.423.9253</p>
+              <p>
+                <a href="mailto:info@thepagesmedia.com" style={{ color: `#ecf0f1` }}>
+                  info@thepagesmedia.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+14174239253" style={{ color: `#ecf0f1` }}>
+                  417.423.9253
+                </a>
+              </p>
             </div>
           </div>
         </section>
-        <p className="footer-notes">
-          Made in Southwest Missouri. Built with{" "}
-          <a href="https://gatsbyjs.org/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
-            GatsbyJS
-          </a>{" "}
-          🚀 and hosted on{" "}
-          <a href="https://www.netlify.com/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
-            Netlify
-          </a>
-          .
-        </p>
+        <div className="footer-notes">
+          <p style={{ marginBottom: `0` }}>
+            Made in Southwest Missouri. Built with{" "}
+            <a href="https://gatsbyjs.org/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
+              GatsbyJS
+            </a>{" "}
+            🚀 and hosted on{" "}
+            <a href="https://www.netlify.com/" target="_blank" rel="noopener no referrer" style={{ color: `#ECF0F1` }}>
+              Netlify
+            </a>
+            .
+          </p>
+          <GetYear />
+        </div>
       </footer>
     );
   }
