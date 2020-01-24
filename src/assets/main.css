@@ -331,6 +331,11 @@ form button {
   padding: 1rem 0 2rem;
 }
 
+.footer-contact {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
 .mobile-header {
   display: none;
 }
@@ -483,6 +488,10 @@ form button {
     font-size: 1rem;
     margin-top: 0;
     padding: 1rem 0 5rem;
+  }
+
+  .footer-contact a {
+    font-size: 1.25rem;
   }
 
   .services {

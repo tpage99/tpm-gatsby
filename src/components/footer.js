@@ -76,7 +76,7 @@ export default class footer extends Component {
           </div>
           <div>
             <h3>contact</h3>
-            <div style={{ fontSize: `1.25rem`, lineHeight: `1.5rem` }}>
+            <div className="footer-contact">
               <p>
                 334 E. Kearney St., #116
                 <br />

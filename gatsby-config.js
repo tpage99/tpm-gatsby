@@ -50,7 +50,7 @@ module.exports = {
         short_name: `The Pages Media`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#a2466c`,
+        theme_color: `#2980b9`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,
