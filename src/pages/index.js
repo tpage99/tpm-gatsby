@@ -38,7 +38,7 @@ export default class index extends Component {
               <div
                 className="pic-card"
                 style={{
-                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377634/web%20assets/jordanvalleyoverlay.png)`,
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579837018/web%20assets/jordanvalleyoverlay.png)`,
                   backgroundPosition: `center center`,
                   backgroundRepeat: `no-repeat`,
                   backgroundSize: `100% 100%`
@@ -51,7 +51,7 @@ export default class index extends Component {
               <div
                 className="pic-card"
                 style={{
-                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377645/web%20assets/gilliozoverlay.png)`,
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579837018/web%20assets/gilliozoverlay.png)`,
                   backgroundPosition: `center center`,
                   backgroundRepeat: `no-repeat`,
                   backgroundSize: `100% 100%`
@@ -64,7 +64,7 @@ export default class index extends Component {
               <div
                 className="pic-card"
                 style={{
-                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377650/web%20assets/downtownoverlay.png)`,
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579837018/web%20assets/downtownoverlay.png)`,
                   backgroundPosition: `center center`,
                   backgroundRepeat: `no-repeat`,
                   backgroundSize: `100% 100%`
@@ -77,7 +77,7 @@ export default class index extends Component {
               <div
                 className="pic-card"
                 style={{
-                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579377654/web%20assets/conventionoverlay.png)`,
+                  backgroundImage: `url(https://res.cloudinary.com/tpage99/image/upload/v1579837018/web%20assets/conventionoverlay.png)`,
                   backgroundPosition: `center center`,
                   backgroundRepeat: `no-repeat`,
                   backgroundSize: `100% 100%`
