@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `The Pages Media`,
     siteUrl: `https://www.thepagesmedia.com`,
-    description: `Web development, design, and social media solutions for local small businesses in the Springfield, MO area.`,
+    description: `The Pages Media does website design, website development, and social media solutions for local small businesses in the Springfield, MO area.`,
     twitter: `@taylorpage99`
   },
   plugins: [
