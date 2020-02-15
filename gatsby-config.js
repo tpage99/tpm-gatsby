@@ -5,7 +5,9 @@ if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
 }
 
-const { spaceId, accessToken } = process.env;
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 
 module.exports = {
   siteMetadata: {
@@ -33,12 +35,14 @@ module.exports = {
         }
       }
     },
-    "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: "gatsby-source-sanity",
       options: {
-        path: `${__dirname}/src/pages/blog`,
-        name: "blog"
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+        overlayDrafts: true,
+        watchMode: true,
+        token: process.env.SANITY_TOKEN
       }
     },
     "gatsby-transformer-remark",

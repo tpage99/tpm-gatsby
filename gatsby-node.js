@@ -1,35 +1,49 @@
-const path = require('path');
+const { isFuture } = require("date-fns");
+/**
+ * Implement Gatsby's Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
 
-exports.createPages = ({ actions, graphql }) => {
+async function createProjectPages(graphql, actions, reporter) {
   const { createPage } = actions;
-
-  const postTemplate = path.resolve('src/templates/blog-post.js');
-
-  return graphql(`
+  const result = await graphql(`
     {
-      allMarkdownRemark {
+      allSanitySampleProject(filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }) {
         edges {
           node {
-            html
             id
-            frontmatter {
-              path
-              title
+            publishedAt
+            slug {
+              current
             }
           }
         }
       }
     }
-  `).then(res => {
-    if (res.errors) {
-      return Promise.reject(res.errors);
-    }
+  `);
 
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  if (result.errors) throw result.errors;
+
+  const projectEdges = (result.data.allSanitySampleProject || {}).edges || [];
+
+  projectEdges
+    .filter(edge => !isFuture(edge.node.publishedAt))
+    .forEach(edge => {
+      const { id } = edge.node;
+      const slug = edge.node.slug.current;
+      const path = `/project/${slug}/`;
+
+      reporter.info(`Creating project page: ${path}`);
+
       createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
+        path,
+        component: require.resolve("./src/templates/project.js"),
+        context: { id }
       });
     });
-  });
+}
+
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  await createProjectPages(graphql, actions, reporter);
 };
