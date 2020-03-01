@@ -37,41 +37,12 @@ export const query = graphql`
         asset {
           _id
         }
-        alt
       }
       title
       slug {
         current
       }
       _rawBody
-      authors {
-        _key
-        person {
-          image {
-            crop {
-              _key
-              _type
-              top
-              bottom
-              left
-              right
-            }
-            hotspot {
-              _key
-              _type
-              x
-              y
-              height
-              width
-            }
-            asset {
-              _id
-            }
-          }
-          name
-        }
-        roles
-      }
     }
   }
 `;
@@ -88,7 +59,7 @@ const BlogPostTemplate = props => {
 
         {errors && (
           <div>
-            <GraphQLErrorList errors={errors} />
+            <h1>Whoops! Something went terribly wrong...</h1>
           </div>
         )}
 
