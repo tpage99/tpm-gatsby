@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
 
-import FooterCTA from "./footer-cta";
-
 import GetYear from "./getCurrentYear";
 
 export default class footer extends Component {
@@ -10,7 +8,6 @@ export default class footer extends Component {
     return (
       <footer>
         <hr />
-        <FooterCTA />
         <section className="footer-grid">
           <div className="footer-pages">
             <h3>pages</h3>

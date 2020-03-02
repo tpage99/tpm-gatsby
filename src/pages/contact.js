@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import HeroNav from "../components/Navbar/HeroNav";
-import Container from "../components/container";
+import ContactContainer from "../components/contactContainer";
 import SiteMetadata from "../components/Site-Metadata";
 import "../assets/main.css";
 
@@ -12,7 +12,7 @@ export default class contact extends Component {
         <SiteMetadata pathname={this.props.location.pathname} />
         <HeroNav />
         <main>
-          <Container>
+          <ContactContainer>
             <h1 style={{ textAlign: `center` }}>say hello.</h1>
             <p style={{ fontSize: `2rem`, lineHeight: `2.2rem`, textAlign: `center`, padding: `0 4rem 2rem` }}>
               If it sounds like we could be a good fit for what you or your business are needing, please fill out the
@@ -61,7 +61,7 @@ export default class contact extends Component {
                 </button>
               </div>
             </form>
-          </Container>
+          </ContactContainer>
         </main>
       </div>
     );
